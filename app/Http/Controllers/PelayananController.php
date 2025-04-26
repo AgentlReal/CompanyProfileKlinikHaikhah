@@ -13,14 +13,14 @@ class PelayananController extends Controller
         return view('index', ['pelayanan' => $pelayanan]);
     }
 
-    // TAMBAH (CREATE)
+    
     public function store(Request $request)
     {
         Pelayanan::create($request->all());
         return redirect()->back();
     }
 
-    // UPDATE
+    
     public function update(Request $request, $id)
     {
         $pelayanan = Pelayanan::findOrFail($id);
@@ -28,7 +28,7 @@ class PelayananController extends Controller
         return redirect()->back();
     }
 
-    // HAPUS (DELETE)
+    
     public function destroy($id)
     {
         $pelayanan = Pelayanan::findOrFail($id);

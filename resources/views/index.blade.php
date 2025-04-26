@@ -92,73 +92,34 @@
 </section>
 
 
-  <!-- Why Us Section -->
-  <section class="why-us" id="why-us">
-    <div class="container">
-      <div class="section-title">
-        <h2>Mengapa Memilih Kami?</h2>
+<!-- Why Us Section -->
+<section class="why-us" id="why-us">
+  <div class="container">
+    <div class="section-title">
+      <h2>Mengapa Memilih Kami?</h2>
+    </div>
+    <div class="why-us-content">
+      <div class="why-us-image aos aos-bottom">
+        <img src="{{ asset('images/mengapa.jpg') }}" alt="Modern clinic facility" />
       </div>
-      <div class="why-us-content">
-        <div class="why-us-image aos aos-bottom">
-          <img src="{{ asset('images/mengapa.jpg') }}" alt="Modern clinic facility" />
-        </div>
-        <div class="why-us-text aos aos-left">
+      <div class="why-us-text aos aos-left">
+
+        @foreach ($mengapa as $item)
           <div class="why-us-item">
             <div class="why-us-icon">
-              <i class="fa-solid fa-award"></i>
+              <i class="fa-solid fa-star"></i> <!-- icon bisa disetting dinamis kalo mau -->
             </div>
             <div>
-              <h3>Pengalaman Lebih dari 20 Tahun</h3>
-              <p>
-                Klinik kami telah berpengalaman dalam memberikan pelayanan
-                kesehatan terpercaya sejak dua dekade lalu, didukung oleh
-                reputasi yang kokoh di bidang medis.
-              </p>
+              <h3>{{ $item->title }}</h3>
+              <p>{{ $item->deskripsi }}</p>
             </div>
           </div>
-          <div class="why-us-item">
-            <div class="why-us-icon">
-              <i class="fa-solid fa-user-doctor"></i>
-            </div>
-            <div>
-              <h3>Tenaga Medis Profesional dan Berkompeten</h3>
-              <p>
-                Didukung oleh dokter, perawat, dan staf medis yang
-                tersertifikasi, berdedikasi tinggi, serta terus mengikuti
-                perkembangan ilmu kedokteran terkini.
-              </p>
-            </div>
-          </div>
-          <div class="why-us-item">
-            <div class="why-us-icon">
-              <i class="fas fa-heart"></i>
-            </div>
-            <div>
-              <h3>Fokus pada Kenyamanan Pasien</h3>
-              <p>
-                Kami memprioritaskan pelayanan ramah, proses yang efisien,
-                serta pendekatan personal untuk menciptakan pengalaman terbaik
-                bagi setiap pasien.
-              </p>
-            </div>
-          </div>
-          <div class="why-us-item">
-            <div class="why-us-icon">
-              <i class="fas fa-house-chimney-medical"></i>
-            </div>
-            <div>
-              <h3>Lingkungan Klinik yang Nyaman dan Hommy</h3>
-              <p>
-                Desain interior yang hangat dan fasilitas modern dirancang
-                untuk mengurangi kesan kaku, sehingga pasien merasa rileks
-                selama konsultasi atau perawatan.
-              </p>
-            </div>
-          </div>
-        </div>
+        @endforeach
+
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Team Section -->
   <section class="team" id="team">
