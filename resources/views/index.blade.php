@@ -69,46 +69,28 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Bentuk Pelayanan</h2>
-      </div>
-      <div class="services-grid aos aos-bottom">
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-stethoscope"></i>
-          </div>
-          <h3>Rawat Jalan</h3>
-          <p>
-            Layanan kesehatan tanpa menginap meliputi konsultasi dokter,
-            pemeriksaan medis, dan pengobatan rutin untuk pasien.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-bed-pulse"></i>
-          </div>
-          <h3>Rawat Inap</h3>
-          <p>
-            Perawatan medis intensif selama maksimal 5 hari dengan rujukan
-            lanjutan bila diperlukan sesuai ketentuan berlaku.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-house-chimney-medical"></i>
-          </div>
-          <h3>Home Care</h3>
-          <p>
-            Layanan perawatan profesional di rumah khusus untuk pasien
-            penyakit kronis berat dengan penanganan berkala oleh tim medis.
-          </p>
-        </div>
-      </div>
+<!-- Services Section -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Bentuk Pelayanan</h2>
     </div>
-  </section>
+    <div class="services-grid aos aos-bottom">
+      @foreach ($pelayanan as $pelayanans)
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-stethoscope"></i> <!-- Ini nanti bisa dibuat dinamis juga kalau mau -->
+        </div>
+        <h3>{{ $pelayanans->nama }}</h3>
+        <p>
+          {{ $pelayanans->deskripsi }}
+        </p>
+      </div>
+      @endforeach
+    </div>
+  </div>
+</section>
+
 
   <!-- Why Us Section -->
   <section class="why-us" id="why-us">
