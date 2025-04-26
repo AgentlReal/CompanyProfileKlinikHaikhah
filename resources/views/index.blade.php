@@ -342,25 +342,26 @@
         <div class="footer-col">
           <h3>Contact Us</h3>
           <div class="contact-info">
+            @foreach($kontak as $k)
             <div>
               <i class="fas fa-map-marker-alt"></i>
-              <p>123 Medical Center Drive<br />Anytown, CA 90210</p>
+              <p>{{ $k->alamat }}</p>
             </div>
             <div>
               <i class="fas fa-phone-alt"></i>
-              <p>(555) 123-4567</p>
+              <p>{{ $k->NoTlpn }}</p>
             </div>
             <div>
               <i class="fas fa-envelope"></i>
-              <p>info@medicareclinic.com</p>
+              <p>{{ $k->email }}</p>
             </div>
             <div>
               <i class="fas fa-clock"></i>
               <p>
-                Mon-Fri: 8:00 AM - 8:00 PM<br />Sat: 9:00 AM - 5:00 PM<br />Sun:
-                Closed
+                {{ $k->Jam }}
               </p>
             </div>
+            @endforeach
           </div>
         </div>
         <div class="footer-col">
