@@ -1,39 +1,34 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\Kontak;
+use App\Models\Mengapa;
 use Illuminate\Http\Request;
 
-class KontakController extends Controller
+class MengapaController extends Controller
 {
-   
     public function index()
     {
-        $kontak = Kontak::all(); 
-        return view('index', ['kontak' => $kontak]);
+        $mengapa = Mengapa::all(); 
+        return view('index', ['mengapa' => $mengapa]);
     }
 
-    
     public function store(Request $request)
     {
-        Kontak::create($request->all());
+        Mengapa::create($request->all());
         return redirect()->back();
     }
 
-    
     public function update(Request $request, $id)
     {
-        $kontak = Kontak::findOrFail($id);
-        $kontak->update($request->all());
+        $mengapa = Mengapa::findOrFail($id);
+        $mengapa->update($request->all());
         return redirect()->back();
     }
 
-    
     public function destroy($id)
     {
-        $kontak = Kontak::findOrFail($id);
-        $kontak->delete();
+        $mengapa = Mengapa::findOrFail($id);
+        $mengapa->delete();
         return redirect()->back();
     }
 }
