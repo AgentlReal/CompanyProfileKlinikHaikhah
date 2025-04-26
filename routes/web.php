@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\KontakController;
+use App\Http\Controllers\HomeController;
+Route::get('/', [HomeController::class, 'index']); // Halaman home
 
-Route::get('/', [KontakController::class, 'index']);
 
