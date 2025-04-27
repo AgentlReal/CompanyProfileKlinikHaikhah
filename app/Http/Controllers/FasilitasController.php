@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\RuangPenerimaan;
+use App\Models\RuangMedis;
 use Illuminate\Http\Request;
 
 class FasilitasController extends Controller
 {
     public function index()
     {
-        return view('fasilitas');
-    }
+        $ruangpenerimaan = RuangPenerimaan::with('fiturs')->get();
 
+        return view('fasilitas', compact('ruangpenerimaan'));
+    }
 }
