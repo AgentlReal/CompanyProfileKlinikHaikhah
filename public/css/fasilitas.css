@@ -1,0 +1,290 @@
+:root {
+  --background-gradient: linear-gradient(135deg, #c9f8ec, #8fefd9);
+  --accent-color: #007b5e;
+  --accent-color-light: #e6fcf4;
+  --accent-color-dark: #035e47;
+}
+
+/* Page Header */
+.page-header {
+  background: var(--background-gradient);
+  padding: 160px 0 80px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--accent-color-dark);
+  margin-bottom: 20px;
+}
+
+.page-header p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Facilities Navigation */
+.facilities-nav {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px 0;
+  position: sticky;
+  top: 80px;
+  z-index: 900;
+}
+
+.facilities-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.facilities-menu li {
+  margin: 0 15px;
+}
+
+.facilities-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 16px;
+  padding: 8px 0;
+  position: relative;
+}
+
+.facilities-menu a:hover {
+  color: var(--accent-color);
+}
+
+.facilities-menu a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.facilities-menu a:hover:after,
+.facilities-menu a.active:after {
+  transform: scaleX(1);
+}
+
+/* Facilities Sections */
+.facilities-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.facilities-section:nth-child(even) {
+  background-color: #f8fcff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  color: var(--accent-color-dark);
+  margin-bottom: -5px;
+}
+
+.section-title span {
+  color: var(--accent-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-title p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 10px auto 0;
+}
+
+/* Facility Card */
+.facility-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 30px;
+}
+
+.facility-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.facility-image {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.facility-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.facility-card:hover .facility-image img {
+  transform: scale(1.05);
+}
+
+.facility-content {
+  padding: 30px;
+}
+
+.facility-content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: var(--accent-color-dark);
+}
+
+.facility-content p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.facility-features {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.facility-features li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.facility-features i {
+  color: var(--accent-color);
+  margin-right: 10px;
+}
+
+/* Grid Layout */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--accent-color);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  z-index: 990;
+}
+
+.back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background-color: #03045e;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 991px) {
+  .facilities-menu {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+  }
+
+  .facilities-menu li {
+    flex-shrink: 0;
+  }
+
+  .page-header h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 80px 0;
+  background-color: #f8fcff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+}
+
+.gallery-caption h4 {
+  margin-bottom: 5px;
+}

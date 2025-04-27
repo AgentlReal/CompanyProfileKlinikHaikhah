@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="{{ asset('images/logo-klinik.png') }}" type="image/png" />
   <title>Klinik Haikhah</title>
-  <link rel="stylesheet" href="{{ asset('css/global.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
   <link
     rel="stylesheet"
     href="{{ asset('modules/fontawesome-free-6.7.2-web/css/all.min.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/global.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
 </head>
 
 <body>
@@ -121,15 +121,15 @@
     </div>
   </section>
 
-<!-- Team Section -->
-<section class="team" id="team">
-  <div class="container">
-    <div class="section-title">
-      <h2>Meet Our Experts</h2>
-    </div>
-    <div class="team-grid aos aos-bottom">
-      
-      @foreach ($dokter as $item)
+  <!-- Team Section -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-title">
+        <h2>Meet Our Experts</h2>
+      </div>
+      <div class="team-grid aos aos-bottom">
+
+        @foreach ($dokter as $item)
         <div class="team-member">
           <div class="member-image">
             <img src="{{ asset('images/' . $item->gambar) }}" alt="{{ $item->nama }}" />
@@ -145,11 +145,11 @@
             </div>
           </div>
         </div>
-      @endforeach
+        @endforeach
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- Testimonials Section -->
@@ -189,6 +189,27 @@
         <button class="testimonial-btn active"></button>
         <button class="testimonial-btn"></button>
         <button class="testimonial-btn"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Bergabunglah dengan Keluarga Klinik Haikhah</h2>
+        <p>
+          Kami berkomitmen untuk selalu memberikan layanan kesehatan terbaik
+          dengan pendekatan personal. Kunjungi kami segera untuk konsultasi
+          atau jadwalkan janji temu secara online.
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="btn">
+            <p class="btn-p">Buat Janji Temu</p>
+            <i class="fa-brands fa-whatsapp btn-icon"></i>
+          </a>
+          <a href="fasilitas.html" class="btn-white">Lihat Fasilitas Kami</a>
+        </div>
       </div>
     </div>
   </section>
