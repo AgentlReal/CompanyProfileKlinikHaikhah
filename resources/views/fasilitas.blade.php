@@ -25,7 +25,7 @@
           <button class="nav-icon nav-icon-x">
             <i class="fa-solid fa-xmark"></i>
           </button>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="{{ route('index') }}">Home</a></li>
           <li><a href="#services">Layanan</a></li>
           <li><a href="#">Fasilitas</a></li>
           <li><a href="#team">Tenaga Kesehatan</a></li>

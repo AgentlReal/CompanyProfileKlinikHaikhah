@@ -27,7 +27,7 @@
           </button>
           <li><a href="#">Home</a></li>
           <li><a href="#services">Layanan</a></li>
-          <li><a href="fasilitas.html">Fasilitas</a></li>
+          <li><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
           <li><a href="#team">Tenaga Kesehatan</a></li>
           <li><a href="#testimonials">Tentang Kami</a></li>
         </ul>
@@ -208,7 +208,7 @@
             <p class="btn-p">Buat Janji Temu</p>
             <i class="fa-brands fa-whatsapp btn-icon"></i>
           </a>
-          <a href="fasilitas.html" class="btn-white">Lihat Fasilitas Kami</a>
+          <a href="{{ route('fasilitas') }}" class="btn-white">Lihat Fasilitas Kami</a>
         </div>
       </div>
     </div>
