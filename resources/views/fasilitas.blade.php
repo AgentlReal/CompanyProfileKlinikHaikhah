@@ -68,75 +68,42 @@
     </div>
   </section>
 
-  <!-- Reception Areas -->
-  <section class="facilities-section" id="reception">
-    <div class="container">
-      <div class="section-title aos aos-bottom">
-        <span>AREA A</span>
-        <h2>Ruang Penerimaan</h2>
-        <p>
-          Dengan area resepsionis yang hangat, kami memastikan kunjungan Anda
-          terasa nyaman sejak langkah pertama.
-        </p>
-      </div>
-      <div class="facilities-grid aos aos-bottom">
-        <div class="facility-card">
-          <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="Administration Room" />
-          </div>
-          <div class="facility-content">
-            <h3>Ruang Administrasi</h3>
-            <p>
-              Area administrasi terpusat kami menangani seluruh proses
-              pendaftaran pasien, pembayaran, pengelolaan rekam medis, hingga
-              operasional kantor umum.
-            </p>
-            <ul class="facility-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Sistem pendaftaran digital
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Pengelolaan rekam medis
-                elektronik yang aman
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Beragam metode pembayaran
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Booth konsultasi pribadi
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="facility-card">
-          <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="Waiting Room" />
-          </div>
-          <div class="facility-content">
-            <h3>Ruang Tunggu</h3>
-            <p>
-              Ruang tunggu kami didesain luas dan nyaman untuk membuat
-              pengalaman menunggu lebih menyenangkan, dengan tetap menjaga
-              jarak yang aman.
-            </p>
-            <ul class="facility-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Tempat duduk yang nyaman
-                dan tertata
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Materi edukasi kesehatan
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Layar informasi digital
-              </li>
-              <li><i class="fas fa-check-circle"></i> Akses Wi-Fi gratis</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+<!-- Reception Areas -->
+<section class="facilities-section" id="reception">
+  <div class="container">
+    <div class="section-title aos aos-bottom">
+      <span>AREA A</span>
+      <h2>Ruang Penerimaan</h2>
+      <p>
+        Dengan area resepsionis yang hangat, kami memastikan kunjungan Anda
+        terasa nyaman sejak langkah pertama.
+      </p>
     </div>
-  </section>
+    
+    <div class="facilities-grid aos aos-bottom">
+      @foreach ($ruangpenerimaan as $ruang)
+      <div class="facility-card">
+        <div class="facility-image">
+          <img src="/api/placeholder/500/300" alt="{{ $ruang->nama }}" />
+        </div>
+        <div class="facility-content">
+          <h3>{{ $ruang->nama }}</h3>
+          <p>{{ $ruang->deskripsi }}</p>
+
+          <ul class="facility-features">
+            @foreach ($ruang->fiturs as $fitur)
+              <li>
+                <i class="fas fa-check-circle"></i> {{ $fitur->nama_fitur }}
+              </li>
+            @endforeach
+          </ul>
+
+        </div>
+      </div>
+      @endforeach
+    </div>
+  </div>
+</section>
 
   <!-- Medical Service Areas -->
   <section class="facilities-section" id="medical-services">
