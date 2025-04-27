@@ -121,88 +121,36 @@
     </div>
   </section>
 
-  <!-- Team Section -->
-  <section class="team" id="team">
-    <div class="container">
-      <div class="section-title">
-        <h2>Meet Our Experts</h2>
-      </div>
-      <div class="team-grid aos aos-bottom">
-        <div class="team-member">
-          <div class="member-image">
-            <img src="{{ asset('images/dokter-1.jpg') }}" alt="Dr. Sarah Johnson" />
-          </div>
-          <div class="member-info">
-            <h3>Dr. Sarah Johnson</h3>
-            <span>Chief Medical Officer</span>
-            <p>
-              Specializing in family medicine with over 15 years of experience
-              in patient care.
-            </p>
-            <div class="social-links">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="member-image">
-            <img src="{{ asset('images/dokter-2.jpg') }}" alt="Dr. Michael Chen" />
-          </div>
-          <div class="member-info">
-            <h3>Dr. Michael Chen</h3>
-            <span>Cardiologist</span>
-            <p>
-              Board-certified cardiologist specializing in preventive cardiac
-              care and treatment.
-            </p>
-            <div class="social-links">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="member-image">
-            <img src="{{ asset('images/dokter-3.jpg') }}" alt="Dr. Emily Rodriguez" />
-          </div>
-          <div class="member-info">
-            <h3>Dr. Emily Rodriguez</h3>
-            <span>Pediatrician</span>
-            <p>
-              Dedicated pediatrician passionate about children's health and
-              developmental care.
-            </p>
-            <div class="social-links">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="member-image">
-            <img src="{{ asset('images/dokter-4.jpg') }}" alt="Dr. David Kim" />
-          </div>
-          <div class="member-info">
-            <h3>Dr. David Kim</h3>
-            <span>Dentist</span>
-            <p>
-              Expert dentist providing comprehensive dental care with a gentle
-              approach.
-            </p>
-            <div class="social-links">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- Team Section -->
+<section class="team" id="team">
+  <div class="container">
+    <div class="section-title">
+      <h2>Meet Our Experts</h2>
     </div>
-  </section>
+    <div class="team-grid aos aos-bottom">
+      
+      @foreach ($dokter as $item)
+        <div class="team-member">
+          <div class="member-image">
+            <img src="{{ asset('images/' . $item->gambar) }}" alt="{{ $item->nama }}" />
+          </div>
+          <div class="member-info">
+            <h3>{{ $item->nama }}</h3>
+            <span>{{ $item->spesialis }}</span>
+            <p>{{ $item->deskripsi }}</p>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      @endforeach
+
+    </div>
+  </div>
+</section>
+
 
   <!-- Testimonials Section -->
   <section class="testimonials" id="testimonials">
