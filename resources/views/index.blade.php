@@ -203,7 +203,7 @@
           atau jadwalkan janji temu secara online.
         </p>
         <div class="cta-buttons">
-          <a href="#" class="btn">
+          <a href="#" class="btn-jt">
             <p class="btn-p">Buat Janji Temu</p>
             <i class="fa-brands fa-whatsapp btn-icon"></i>
           </a>
