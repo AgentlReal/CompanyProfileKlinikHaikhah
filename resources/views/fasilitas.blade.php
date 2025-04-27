@@ -82,7 +82,7 @@
       <div class="facilities-grid aos aos-bottom">
         <div class="facility-card">
           <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="Administration Room" />
+            <img src="" alt="Administration Room" />
           </div>
           <div class="facility-content">
             <h3>Ruang Administrasi</h3>
@@ -110,7 +110,7 @@
         </div>
         <div class="facility-card">
           <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="Waiting Room" />
+            <img src="" alt="Waiting Room" />
           </div>
           <div class="facility-content">
             <h3>Ruang Tunggu</h3>
@@ -153,7 +153,7 @@
         <div class="facility-card">
           <div class="facility-image">
             <img
-              src="/api/placeholder/500/300"
+              src=""
               alt="General Examination Room" />
           </div>
           <div class="facility-content">
@@ -186,7 +186,7 @@
         <div class="facility-card">
           <div class="facility-image">
             <img
-              src="/api/placeholder/500/300"
+              src=""
               alt="Medical Procedure Room" />
           </div>
           <div class="facility-content">
@@ -215,7 +215,7 @@
         </div>
         <div class="facility-card">
           <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="Emergency Room" />
+            <img src="" alt="Emergency Room" />
           </div>
           <div class="facility-content">
             <h3>Ruang Gawat Darurat</h3>
@@ -244,7 +244,7 @@
         </div>
         <div class="facility-card">
           <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="Inpatient Room" />
+            <img src="" alt="Inpatient Room" />
           </div>
           <div class="facility-content">
             <h3>Ruang Rawat Inap</h3>
@@ -270,7 +270,7 @@
         </div>
         <div class="facility-card">
           <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="Dental Care Room" />
+            <img src="" alt="Dental Care Room" />
           </div>
           <div class="facility-content">
             <h3>Ruang Perawatan Gigi</h3>
@@ -297,7 +297,7 @@
         </div>
         <div class="facility-card">
           <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="Delivery Room" />
+            <img src="" alt="Delivery Room" />
           </div>
           <div class="facility-content">
             <h3>Ruang Persalinan</h3>
@@ -326,7 +326,7 @@
         </div>
         <div class="facility-card">
           <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="Maternity Ward" />
+            <img src="" alt="Maternity Ward" />
           </div>
           <div class="facility-content">
             <h3>Ruang Nifas</h3>
@@ -369,7 +369,7 @@
       <div class="facilities-grid aos aos-bottom">
         <div class="facility-card">
           <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="Pharmacy" />
+            <img src="" alt="Pharmacy" />
           </div>
           <div class="facility-content">
             <h3>Apotek</h3>
@@ -412,7 +412,7 @@
       <div class="facilities-grid aos aos-bottom">
         <div class="facility-card">
           <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="Restrooms" />
+            <img src="" alt="Restrooms" />
           </div>
           <div class="facility-content">
             <h3>Toilet Umum</h3>
@@ -438,7 +438,7 @@
         </div>
         <div class="facility-card">
           <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="Staff Room" />
+            <img src="" alt="Staff Room" />
           </div>
           <div class="facility-content">
             <h3>Ruang Staff</h3>
@@ -463,7 +463,7 @@
         </div>
         <div class="facility-card">
           <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="Parking Lot" />
+            <img src="" alt="Parking Lot" />
           </div>
           <div class="facility-content">
             <h3>Tempat Parkir Kendaraan</h3>
@@ -500,9 +500,9 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-col">
-          <h3>Tentang Klinik Haikhah</h3>
+          <h3>Tentang Klinik Pratama Haikhah</h3>
           <p>
-            Klinik Haikhah berkomitmen memberikan layanan kesehatan yang
+            Klinik Pratama Haikhah berkomitmen memberikan layanan kesehatan yang
             menyeluruh dengan fokus pada kenyamanan dan kesejahteraan pasien.
             Kami berusaha memberikan perawatan berkualitas tinggi untuk
             individu dan keluarga.
@@ -577,7 +577,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Klinik Haikhah. All Rights Reserved.</p>
+        <p>&copy; 2025 Klinik Pratama Haikhah. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
