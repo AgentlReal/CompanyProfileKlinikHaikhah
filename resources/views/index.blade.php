@@ -245,6 +245,27 @@
     </div>
   </section>
 
+  <!-- CTA Section -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Bergabunglah dengan Keluarga Klinik Haikhah</h2>
+        <p>
+          Kami berkomitmen untuk selalu memberikan layanan kesehatan terbaik
+          dengan pendekatan personal. Kunjungi kami segera untuk konsultasi
+          atau jadwalkan janji temu secara online.
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="btn">
+            <p class="btn-p">Buat Janji Temu</p>
+            <i class="fa-brands fa-whatsapp btn-icon"></i>
+          </a>
+          <a href="fasilitas.html" class="btn-white">Lihat Fasilitas Kami</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer id="contact">
     <div class="container">
