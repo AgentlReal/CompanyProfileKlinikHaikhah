@@ -51,8 +51,7 @@
         <div class="hero-text aos aos-left">
           <h1>Kesehatan Prima, Layanan Unggul – Solusi Medis Terpercaya</h1>
           <p>
-            Sebagai klinik berpengalaman lebih dari dua dekade, Klinik Haikhah
-            menghadirkan layanan kesehatan profesional dengan tim medis
+            Klinik Pratama Haikhah menghadirkan layanan kesehatan profesional dengan tim medis
             berkompeten dan fasilitas modern. Prioritas kami adalah kenyamanan
             pasien dalam lingkungan yang hommy, menjadikan setiap kunjungan
             Anda aman, nyaman, dan personal.
@@ -219,9 +218,9 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-col">
-          <h3>Tentang Klinik Haikhah</h3>
+          <h3>Tentang Klinik Pratama Haikhah</h3>
           <p>
-            Klinik Haikhah berkomitmen memberikan layanan kesehatan yang
+            Klinik Pratama Haikhah berkomitmen memberikan layanan kesehatan yang
             menyeluruh dengan fokus pada kenyamanan dan kesejahteraan pasien.
             Kami berusaha memberikan perawatan berkualitas tinggi untuk
             individu dan keluarga.
@@ -296,7 +295,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Klinik Haikhah. All Rights Reserved.</p>
+        <p>&copy; 2025 Klinik Pratama Haikhah. All Rights Reserved.</p>
       </div>
     </div>
   </footer>

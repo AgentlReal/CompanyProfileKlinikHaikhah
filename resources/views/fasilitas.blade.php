@@ -500,9 +500,9 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-col">
-          <h3>Tentang Klinik Haikhah</h3>
+          <h3>Tentang Klinik Pratama Haikhah</h3>
           <p>
-            Klinik Haikhah berkomitmen memberikan layanan kesehatan yang
+            Klinik Pratama Haikhah berkomitmen memberikan layanan kesehatan yang
             menyeluruh dengan fokus pada kenyamanan dan kesejahteraan pasien.
             Kami berusaha memberikan perawatan berkualitas tinggi untuk
             individu dan keluarga.
@@ -577,7 +577,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Klinik Haikhah. All Rights Reserved.</p>
+        <p>&copy; 2025 Klinik Pratama Haikhah. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
