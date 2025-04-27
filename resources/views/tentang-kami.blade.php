@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo-klinik.png" type="image/png" />
+    <title>About Us - Klinik Haikhah</title>
+    <link
+        rel="stylesheet"
+        href="modules/fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/tentang-kami.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo-klinik.png" alt="Klinik Haikhah Logo" />
+                </div>
+                <ul class="nav-links">
+                    <button class="nav-icon nav-icon-x">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Layanan</a></li>
+                    <li><a href="fasilitas.html">Fasilitas</a></li>
+                    <li><a href="index.html#team">Tenaga Kesehatan</a></li>
+                    <li><a href="#" class="active">Tentang Kami</a></li>
+                </ul>
+                <div class="nav-right">
+                    <a href="#" class="btn">
+                        <p class="btn-p">Buat Janji Temu</p>
+                        <i class="fa-brands fa-whatsapp btn-icon"></i>
+                    </a>
+                    <button class="nav-icon nav-icon-bars">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container aos aos-bottom">
+            <h1>Tentang Klinik Haikhah</h1>
+            <p>
+                Mengenal lebih dekat dengan klinik kesehatan terpercaya yang telah
+                melayani masyarakat selama lebih dari dua dekade dengan komitmen pada
+                kualitas layanan dan kenyamanan pasien.
+            </p>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="section history" id="history">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sejarah Perjalanan Kami</h2>
+            </div>
+            <div class="history-content">
+                <div class="history-text aos aos-left">
+                    <p>
+                        Klinik Pratama Haikhah didirikan pada tahun 2001 oleh Muhammad
+                        Khairun Anwar dan Dr. Nihayatus Solikhah dengan visi sederhana:
+                        memberikan layanan kesehatan berkualitas tinggi yang terjangkau
+                        bagi masyarakat. Dimulai sebagai klinik kecil dengan tiga ruang
+                        perawatan, Klinik Haikhah telah berkembang pesat menjadi pusat
+                        layanan kesehatan komprehensif yang kini memiliki fasilitas
+                        modern.
+                    </p>
+                    <p>
+                        Selama dua dekade perjalanannya, Klinik Haikhah telah mengalami
+                        berbagai transformasi signifikan dengan perluasan area layanan,
+                        penambahan staf medis profesional, dan peningkatan teknologi
+                        kesehatan. Pada tahun 2012, klinik kami melakukan renovasi besar
+                        pertama dan menambahkan layanan rawat inap terbatas.
+                    </p>
+                    <p>
+                        Tahun 2019 menandai ekspansi besar kedua dengan penambahan
+                        departemen khusus untuk anak-anak, lansia, dan unit gigi modern
+                        yang dilengkapi peralatan terkini. Kini, setelah lebih dari 20
+                        tahun memberikan pelayanan, Klinik Haikhah terus berkomitmen untuk
+                        berinovasi dalam layanan kesehatan sambil mempertahankan
+                        nilai-nilai keramahtamahan dan perhatian personal yang menjadi
+                        landasan awal berdirinya klinik ini.
+                    </p>
+                </div>
+                <div class="history-image aos aos-bottom">
+                    <img src="images/sejarah.jpg" alt="Sejarah Klinik Haikhah" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission and Values Section -->
+    <section class="section mission-values" id="mission-values">
+        <div class="container">
+            <div class="section-title">
+                <h2>Misi & Nilai Kami</h2>
+            </div>
+            <div class="mission-values-grid">
+                <div class="mission-box aos aos-bottom">
+                    <h3><i class="fas fa-bullseye"></i> Misi Kami</h3>
+                    <div class="values-list">
+                        <div class="values-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Mewujudkan pelayanan yang bermutu </strong> -
+                                Memberikan layanan kesehatan yang aman, efektif, dan
+                                berorientasi pasien.
+                            </div>
+                        </div>
+                        <div class="values-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Mewujudkan pelayanan yang profesional </strong> -
+                                Menyediakan tenaga medis terlatih dengan standar etika yang
+                                tinggi.
+                            </div>
+                        </div>
+                        <div class="values-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Mewujudkan pelayanan yang terjangkau</strong> -
+                                Memberikan akses layanan kesehatan berkualitas dengan biaya
+                                yang rasional.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="values-box aos aos-bottom">
+                    <h3><i class="fas fa-heart"></i> Nilai-Nilai Kami</h3>
+                    <div class="values-list">
+                        <div class="values-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Kepedulian & Empati</strong> - Kami menempatkan
+                                kesejahteraan pasien sebagai prioritas utama dalam setiap
+                                interaksi dan keputusan medis.
+                            </div>
+                        </div>
+                        <div class="values-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Profesionalisme</strong> - Kami menjunjung tinggi
+                                standar etika dan kompetensi medis dalam memberikan layanan
+                                kesehatan.
+                            </div>
+                        </div>
+                        <div class="values-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Inovasi</strong> - Kami terus mengembangkan metode
+                                perawatan dan layanan mengikuti perkembangan ilmu kedokteran.
+                            </div>
+                        </div>
+                        <div class="values-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Integritas</strong> - Kami menjalankan praktik dengan
+                                kejujuran dan transparansi dalam semua aspek layanan.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pencapaian Kami</h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card aos aos-bottom">
+                    <div class="achievement-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>20+</h3>
+                    <p>Tahun Pengalaman</p>
+                </div>
+                <div class="achievement-card aos aos-bottom">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>50000+</h3>
+                    <p>Pasien Terlayani</p>
+                </div>
+                <div class="achievement-card aos aos-bottom">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>15+</h3>
+                    <p>Penghargaan & Sertifikasi</p>
+                </div>
+                <div class="achievement-card aos aos-bottom">
+                    <div class="achievement-icon">
+                        <i class="fas fa-hand-holding-medical"></i>
+                    </div>
+                    <h3 class="percent-value">98%</h3>
+                    <p>Kepuasan Pasien</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <div class="section-title">
+                <h2>Perjalanan Kami</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content aos aos-bottom">
+                        <span class="timeline-date">2001</span>
+                        <h3>Awal Pendirian</h3>
+                        <p>
+                            Klinik Haikhah didirikan oleh Muhammad Khairun Anwar dan Dr.
+                            Nihayatus Solikhah sebagai klinik kecil dengan tiga ruang
+                            perawatan dan fokus pada layanan umum.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content aos aos-bottom">
+                        <span class="timeline-date">2005</span>
+                        <h3>Perluasan Layanan</h3>
+                        <p>
+                            Penambahan layanan pediatri dan geriatri, serta meluncurkan
+                            program kemitraan dengan asuransi kesehatan pertama.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content aos aos-bottom">
+                        <span class="timeline-date">2010</span>
+                        <h3>Renovasi Besar Pertama</h3>
+                        <p>
+                            Ekspansi fasilitas dan penambahan layanan rawat inap terbatas
+                            dengan kapasitas 10 tempat tidur.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content aos aos-bottom">
+                        <span class="timeline-date">2015</span>
+                        <h3>Modernisasi Teknologi</h3>
+                        <p>
+                            Implementasi sistem rekam medis elektronik dan penambahan
+                            departemen gigi modern dengan teknologi terkini.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content aos aos-bottom">
+                        <span class="timeline-date">2020</span>
+                        <h3>Layanan Home Care</h3>
+                        <p>
+                            Peluncuran program home care untuk pasien lanjut usia dan
+                            penderita penyakit kronis yang membutuhkan perawatan di rumah.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content aos aos-bottom">
+                        <span class="timeline-date">2022</span>
+                        <h3>Integrasi Telemedicine</h3>
+                        <p>
+                            Pengembangan platform telemedicine untuk konsultasi jarak jauh,
+                            memudahkan akses layanan kesehatan bagi semua kalangan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="leadership">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tim Manajemen</h2>
+            </div>
+            <div class="management-team">
+                <div class="team-member aos aos-bottom">
+                    <div class="member-image">
+                        <img src="" alt="Muhammad Khairun Anwar" />
+                    </div>
+                    <div class="member-info">
+                        <h3>Muhammad Khairun Anwar</h3>
+                        <span>Pendiri</span>
+                        <p>
+                            Dokter umum berpengalaman dengan spesialisasi di bidang
+                            kedokteran keluarga. Memimpin Klinik Haikhah dengan visi
+                            memberikan layanan kesehatan berkualitas tinggi yang terjangkau.
+                        </p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member aos aos-bottom">
+                    <div class="member-image">
+                        <img src="" alt="Dr. Nihayatus Solikhah" />
+                    </div>
+                    <div class="member-info">
+                        <h3>Dr. Nihayatus Solikhah</h3>
+                        <span>Pendiri & Direktur Medis</span>
+                        <p>
+                            Dokter spesialis penyakit dalam dengan pengalaman lebih dari 25
+                            tahun. Bertanggung jawab atas standar medis dan pengembangan
+                            layanan kesehatan baru.
+                        </p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member aos aos-bottom">
+                    <div class="member-image">
+                        <img src="" alt="Dewi Safitri" />
+                    </div>
+                    <div class="member-info">
+                        <h3>Ayu</h3>
+                        <span>Manajer Operasional</span>
+                        <p>
+                            Profesional berpengalaman di bidang manajemen kesehatan dengan
+                            fokus pada peningkatan efisiensi operasional dan kualitas
+                            layanan pasien.
+                        </p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Tentang Klinik Pratama Haikhah</h3>
+                    <p>
+                        Klinik Pratama Haikhah berkomitmen memberikan layanan kesehatan
+                        yang menyeluruh dengan fokus pada kenyamanan dan kesejahteraan
+                        pasien. Kami berusaha memberikan perawatan berkualitas tinggi
+                        untuk individu dan keluarga.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#services">Layanan</a></li>
+                        <li><a href="fasilitas.html">Fasilitas</a></li>
+                        <li><a href="index.html#team">Tenaga Medis</a></li>
+                        <li><a href="#">Tentang Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Partnerships</h3>
+                    <ul class="footer-partnerships">
+                        <li>
+                            <img src="images/partnership-1.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="images/partnership-2.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="images/partnership-3.png" alt="" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Kontak Kami</h3>
+                    <div class="contact-info">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>
+                                Jl. Pramuka Gg. Rengas Sejahtera No. 1, Sungai Rengas, Kec.
+                                <br />
+                                Sungai Kakap, Kabupaten Kubu Raya, Kalimantan Barat 78381
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone-alt"></i>
+                            <p>+62 812-5650-0204</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <p>klinikhaikhah@gmail.com</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-clock"></i>
+                            <p>Buka 24 Jam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>
+                        Berlangganan newsletter kami untuk mendapatkan tips kesehatan dan
+                        informasi terbaru.
+                    </p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Masukkan email Anda" />
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="social-links" style="margin-top: 20px">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Klinik Pratama Haikhah. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/global.js"></script>
+    <script src="js/tentang-kami.js"></script>
+</body>
+
+</html>
