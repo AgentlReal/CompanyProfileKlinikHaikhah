@@ -7,6 +7,7 @@
   <link rel="icon" href="{{ asset('images/logo-klinik.png') }}" type="image/png" />
   <title>Klinik Haikhah</title>
   <link rel="stylesheet" href="{{ asset('css/global.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
   <link
     rel="stylesheet"
     href="{{ asset('modules/fontawesome-free-6.7.2-web/css/all.min.css') }}" />
@@ -20,7 +21,6 @@
         <div class="logo">
           <img src="{{ asset('images/logo-klinik.png') }}" alt="" />
         </div>
-        <!-- <div class="logo">Medi<span>Care</span></div> -->
         <ul class="nav-links">
           <button class="nav-icon nav-icon-x">
             <i class="fa-solid fa-xmark"></i>
@@ -69,42 +69,42 @@
     </div>
   </section>
 
-<!-- Services Section -->
-<section class="services" id="services">
-  <div class="container">
-    <div class="section-title">
-      <h2>Bentuk Pelayanan</h2>
-    </div>
-    <div class="services-grid aos aos-bottom">
-      @foreach ($pelayanan as $pelayanans)
-      <div class="service-card">
-        <div class="service-icon">
-          <i class="fa-solid fa-stethoscope"></i> <!-- Ini nanti bisa dibuat dinamis juga kalau mau -->
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Bentuk Pelayanan</h2>
+      </div>
+      <div class="services-grid aos aos-bottom">
+        @foreach ($pelayanan as $pelayanans)
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-stethoscope"></i> <!-- Ini nanti bisa dibuat dinamis juga kalau mau -->
+          </div>
+          <h3>{{ $pelayanans->nama }}</h3>
+          <p>
+            {{ $pelayanans->deskripsi }}
+          </p>
         </div>
-        <h3>{{ $pelayanans->nama }}</h3>
-        <p>
-          {{ $pelayanans->deskripsi }}
-        </p>
+        @endforeach
       </div>
-      @endforeach
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- Why Us Section -->
-<section class="why-us" id="why-us">
-  <div class="container">
-    <div class="section-title">
-      <h2>Mengapa Memilih Kami?</h2>
-    </div>
-    <div class="why-us-content">
-      <div class="why-us-image aos aos-bottom">
-        <img src="{{ asset('images/mengapa.jpg') }}" alt="Modern clinic facility" />
+  <!-- Why Us Section -->
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <div class="section-title">
+        <h2>Mengapa Memilih Kami?</h2>
       </div>
-      <div class="why-us-text aos aos-left">
+      <div class="why-us-content">
+        <div class="why-us-image aos aos-bottom">
+          <img src="{{ asset('images/mengapa.jpg') }}" alt="Modern clinic facility" />
+        </div>
+        <div class="why-us-text aos aos-left">
 
-        @foreach ($mengapa as $item)
+          @foreach ($mengapa as $item)
           <div class="why-us-item">
             <div class="why-us-icon">
               <i class="fa-solid fa-star"></i> <!-- icon bisa disetting dinamis kalo mau -->
@@ -114,12 +114,12 @@
               <p>{{ $item->deskripsi }}</p>
             </div>
           </div>
-        @endforeach
+          @endforeach
 
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Team Section -->
   <section class="team" id="team">
