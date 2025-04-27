@@ -9,8 +9,8 @@
     <link
         rel="stylesheet"
         href="modules/fontawesome-free-6.7.2-web/css/all.min.css" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/tentang-kami.css" />
+    <link rel="stylesheet" href="{{ asset('css/global.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/tentang-kami.css') }}" />
 </head>
 
 <body>
@@ -444,8 +444,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/global.js"></script>
-    <script src="js/tentang-kami.js"></script>
+    <script src="{{ asset('js/global.js') }}"></script>
+    <script src="{{ asset('js/tentang-kami.js') }}"></script>
 </body>
 
 </html>
