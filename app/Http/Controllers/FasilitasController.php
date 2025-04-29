@@ -11,7 +11,8 @@ class FasilitasController extends Controller
     public function index()
     {
         $ruangpenerimaan = RuangPenerimaan::with('fiturs')->get();
-        $areab = RuangB::with('fiturs')->get();
+        $ruangb = RuangB::with('fiturs')->get(); // <- Ganti nama variabelnya sesuai compact
         return view('fasilitas', compact('ruangpenerimaan', 'ruangb'));
+        
     }
 }
