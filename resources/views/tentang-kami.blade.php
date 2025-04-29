@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/logo-klinik.png" type="image/png" />
-    <title>About Us - Klinik Haikhah</title>
+    <title>Klinik Haikhah</title>
     <link
         rel="stylesheet"
         href="modules/fontawesome-free-6.7.2-web/css/all.min.css" />
@@ -25,11 +25,11 @@
                     <button class="nav-icon nav-icon-x">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#services">Layanan</a></li>
-                    <li><a href="fasilitas.html">Fasilitas</a></li>
-                    <li><a href="index.html#team">Tenaga Kesehatan</a></li>
-                    <li><a href="#" class="active">Tentang Kami</a></li>
+                    <li><a href="{{ route('index') }}">Home</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
+                    <li><a href="{{ route('tenaga-kesehatan') }}">Tenaga Kesehatan</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
                 </ul>
                 <div class="nav-right">
                     <a href="#" class="btn">
