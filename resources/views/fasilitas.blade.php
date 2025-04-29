@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="images/logo-klinik.png" type="image/png" />
   <title>Klinik Haikhah</title>
-  <link
-    rel="stylesheet"
-    href="modules/fontawesome-free-6.7.2-web/css/all.min.css" />
+  <link rel="stylesheet" href="modules/fontawesome-free-6.7.2-web/css/all.min.css" />
   <link rel="stylesheet" href="{{ asset('css/global.css') }}" />
   <link rel="stylesheet" href="{{ asset('css/fasilitas.css') }}" />
 </head>
@@ -118,7 +116,7 @@
       </div>
 
       <div class="facilities-grid aos aos-bottom">
-        @foreach ($areab as $ruang)
+        @foreach ($ruangb as $ruang)
         <div class="facility-card">
           <div class="facility-image">
             {{-- Kalau nanti ada gambar, tinggal load disini --}}
@@ -127,9 +125,9 @@
           <div class="facility-content">
             <h3>{{ $ruang->nama }}</h3>
             <p>{{ $ruang->deskripsi }}</p>
-            @if($ruang->fiturb->count() > 0)
+            @if($ruang->fiturs->count() > 0)
             <ul class="facility-features">
-              @foreach ($ruang->fiturb as $fitur)
+              @foreach ($ruang->fiturs as $fitur)
               <li><i class="fas fa-check-circle"></i> {{ $fitur->nama_fitur }}</li>
               @endforeach
             </ul>
