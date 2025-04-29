@@ -12,6 +12,6 @@ class AreaC extends Model
 
     public function fiturs()
     {
-        return $this->hasMany(FiturC::class, 'ruang_id', 'id');
+        return $this->hasMany(FiturC::class, 'id', 'ruang_id');
     }
 }

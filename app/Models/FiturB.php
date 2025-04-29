@@ -12,6 +12,6 @@ class FiturB extends Model
     
     public function ruang()
     {
-        return $this->belongsTo(RuangB::class, 'ruang_id', 'id');
+        return $this->belongsTo(RuangB::class, 'id', 'ruang_id');
     }
 }

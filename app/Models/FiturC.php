@@ -12,6 +12,6 @@ class FiturC extends Model
     
     public function ruang()
     {
-        return $this->belongsTo(RuangC::class, 'ruang_id', 'id');
+        return $this->belongsTo(RuangC::class, 'id', 'ruang_id');
     }
 }

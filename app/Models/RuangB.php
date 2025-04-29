@@ -12,6 +12,6 @@ class RuangB extends Model
 
     public function fiturs()
     {
-        return $this->hasMany(FiturB::class, 'ruang_id', 'id');
+        return $this->hasMany(FiturB::class, 'id', 'ruang_id');
     }
 }
