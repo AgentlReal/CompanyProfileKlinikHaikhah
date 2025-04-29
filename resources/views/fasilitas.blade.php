@@ -105,222 +105,43 @@
     </div>
   </section>
 
-  <!-- Medical Service Areas -->
-  <section class="facilities-section" id="medical-services">
+<!-- Medical Service Areas -->
+<section class="facilities-section" id="medical-services">
     <div class="container">
-      <div class="section-title aos aos-bottom">
-        <span>AREA B</span>
-        <h2>Ruang Pelayanan Medik</h2>
-        <p>
-          Area layanan medis kami didesain khusus dengan teknologi canggih
-          untuk memberikan perawatan yang menyeluruh
-        </p>
-      </div>
-      <div class="facilities-grid aos aos-bottom">
-        <div class="facility-card">
-          <div class="facility-image">
-            <img
-              src=""
-              alt="General Examination Room" />
-          </div>
-          <div class="facility-content">
-            <h3>Ruang Pemeriksaan Umum</h3>
+        <div class="section-title aos aos-bottom">
+            <span>AREA B</span>
+            <h2>Ruang Pelayanan Medik</h2>
             <p>
-              Ruang privat untuk pemeriksaan umum, konsultasi, dan asesmen
-              diagnostik, tempat dokter bertemu pasien untuk membahas keluhan
-              kesehatan.
+                Area layanan medis kami didesain khusus dengan teknologi canggih
+                untuk memberikan perawatan yang menyeluruh
             </p>
-            <ul class="facility-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Peralatan diagnostik
-                canggih
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>Ruang konsultasi kedap
-                suara
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Tempat periksa yang
-                ergonomis
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Komputer kerja untuk
-                dokter
-              </li>
-            </ul>
-          </div>
         </div>
-        <div class="facility-card">
-          <div class="facility-image">
-            <img
-              src=""
-              alt="Medical Procedure Room" />
-          </div>
-          <div class="facility-content">
-            <h3>Ruang Tindakan Medis</h3>
-            <p>
-              Ruang khusus untuk tindakan medis ringan seperti injeksi,
-              perawatan luka, dan prosedur lain yang membutuhkan lingkungan
-              steril.
-            </p>
-            <ul class="facility-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Area prosedur steril
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Peralatan medis khusus
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Sistem pencahayaan
-                mutakhir
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Fasilitas respons darurat
-              </li>
-            </ul>
-          </div>
+
+        <div class="facilities-grid aos aos-bottom">
+            @foreach ($areab as $ruang)
+                <div class="facility-card">
+                    <div class="facility-image">
+                        {{-- Kalau nanti ada gambar, tinggal load disini --}}
+                        <img src="{{ $ruang->gambar ?? '' }}" alt="{{ $ruang->nama }}">
+                    </div>
+                    <div class="facility-content">
+                        <h3>{{ $ruang->nama }}</h3>
+                        <p>{{ $ruang->deskripsi }}</p>
+                        @if($ruang->fiturb->count() > 0)
+                            <ul class="facility-features">
+                                @foreach ($ruang->fiturb as $fitur)
+                                    <li><i class="fas fa-check-circle"></i> {{ $fitur->nama_fitur }}</li>
+                                @endforeach
+                            </ul>
+                        @endif
+                    </div>
+                </div>
+            @endforeach
         </div>
-        <div class="facility-card">
-          <div class="facility-image">
-            <img src="" alt="Emergency Room" />
-          </div>
-          <div class="facility-content">
-            <h3>Ruang Gawat Darurat</h3>
-            <p>
-              Ruang gawat darurat kami siap menangani situasi kritis dengan
-              perlengkapan lengkap dan respons cepat, tersedia 24 jam.
-            </p>
-            <ul class="facility-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Layanan darurat 24/7
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Peralatan penunjang hidup
-                lanjutan
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Fasilitas penanganan
-                trauma
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Akses langsung ke unit
-                diagnostik
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="facility-card">
-          <div class="facility-image">
-            <img src="" alt="Inpatient Room" />
-          </div>
-          <div class="facility-content">
-            <h3>Ruang Rawat Inap</h3>
-            <p>
-              Ruang inap yang nyaman dan diawasi ketat untuk pasien yang
-              membutuhkan perawatan lebih lanjut atau observasi medis jangka
-              pendek.
-            </p>
-            <ul class="facility-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Tempat tidur rumah sakit
-                yang dapat diatur
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Sistem monitoring pasien
-              </li>
-              <li><i class="fas fa-check-circle"></i> Kamar mandi pribadi</li>
-              <li>
-                <i class="fas fa-check-circle"></i> Fasilitas untuk keluarga
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="facility-card">
-          <div class="facility-image">
-            <img src="" alt="Dental Care Room" />
-          </div>
-          <div class="facility-content">
-            <h3>Ruang Perawatan Gigi</h3>
-            <p>
-              Suite perawatan gigi modern yang mendukung layanan kesehatan
-              mulut menyeluruh, mulai dari pencegahan hingga kosmetik.
-            </p>
-            <ul class="facility-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Kursi gigi modern dan
-                nyaman
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Peralatan x-ray digital
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Area sterilisasi alat
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Alat prosedur gigi lengkap
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="facility-card">
-          <div class="facility-image">
-            <img src="" alt="Delivery Room" />
-          </div>
-          <div class="facility-content">
-            <h3>Ruang Persalinan</h3>
-            <p>
-              Suite persalinan yang aman dan nyaman untuk proses melahirkan,
-              dengan akses cepat ke layanan darurat jika diperlukan.
-            </p>
-            <ul class="facility-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Tempat tidur dan
-                perlengkapan persalinan
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Sistem monitoring janin
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Area pemeriksaan bayi baru
-                lahir
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Dukungan fasilitas operasi
-                darurat
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="facility-card">
-          <div class="facility-image">
-            <img src="" alt="Maternity Ward" />
-          </div>
-          <div class="facility-content">
-            <h3>Ruang Nifas</h3>
-            <p>
-              Ruang rawat inap pascapersalinan yang nyaman, mendukung proses
-              pemulihan ibu serta ikatan awal antara ibu dan bayi.
-            </p>
-            <ul class="facility-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Kamar bersama ibu dan bayi
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Area dukungan menyusui
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Fasilitas perawatan bayi
-                baru lahir
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Ruang kunjungan keluarga
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+
     </div>
-  </section>
+</section>
+
 
   <!-- Support Services -->
   <section class="facilities-section" id="support-services">
