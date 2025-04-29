@@ -1,5 +1,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/klir3411
-    - /bin/cp -r * $DEPLOYPATH/CompanyProfileKlinikHaikhah
+    - /bin/cp -r .[!.]* * $DEPLOYPATH/CompanyProfileKlinikHaikhah
     - /bin/cp -r public/* $DEPLOYPATH/public_html
