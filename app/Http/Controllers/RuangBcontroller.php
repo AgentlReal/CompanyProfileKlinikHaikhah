@@ -9,8 +9,8 @@ class RuangBcontroller extends Controller
 {
     public function index()
     {
-        $areab= RuangB::all();
-        return view('fasilitas', ['ruangb' => $areab]);
+        $ruangb = RuangB::all();
+        return view('fasilitas', ['ruangb' => $ruangb]);
     }
 
     public function store(Request $request)
@@ -21,15 +21,15 @@ class RuangBcontroller extends Controller
 
     public function update(Request $request, $id)
     {
-        $areab = RuangB::findOrFail($id);
-        $areab->update($request->all());
+        $ruangb = RuangB::findOrFail($id);
+        $ruangb->update($request->all());
         return redirect()->back();
     }
 
     public function destroy($id)
     {
-        $areab = RuangB::findOrFail($id);
-        $areab->delete();
+        $ruangb = RuangB::findOrFail($id);
+        $ruangb->delete();
         return redirect()->back();
     }
 }
