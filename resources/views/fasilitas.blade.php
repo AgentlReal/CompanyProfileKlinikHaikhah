@@ -28,8 +28,8 @@
           <li><a href="{{ route('index') }}">Home</a></li>
           <li><a href="#services">Layanan</a></li>
           <li><a href="#">Fasilitas</a></li>
-          <li><a href="#team">Tenaga Kesehatan</a></li>
-          <li><a href="tentang-kami.html">Tentang Kami</a></li>
+          <li><a href="{{ route('tenaga-kesehatan') }}">Tenaga Kesehatan</a></li>
+          <li><a href="{{ route('tentang-kami') }}">Tentang Kami</a></li>
         </ul>
         <div class="nav-right">
           <a href="#appointment" class="btn">
@@ -68,42 +68,42 @@
     </div>
   </section>
 
-<!-- Reception Areas -->
-<section class="facilities-section" id="reception">
-  <div class="container">
-    <div class="section-title aos aos-bottom">
-      <span>AREA A</span>
-      <h2>Ruang Penerimaan</h2>
-      <p>
-        Dengan area resepsionis yang hangat, kami memastikan kunjungan Anda
-        terasa nyaman sejak langkah pertama.
-      </p>
-    </div>
-    
-    <div class="facilities-grid aos aos-bottom">
-      @foreach ($ruangpenerimaan as $ruang)
-      <div class="facility-card">
-        <div class="facility-image">
-          <img src="/api/placeholder/500/300" alt="{{ $ruang->nama }}" />
-        </div>
-        <div class="facility-content">
-          <h3>{{ $ruang->nama }}</h3>
-          <p>{{ $ruang->deskripsi }}</p>
+  <!-- Reception Areas -->
+  <section class="facilities-section" id="reception">
+    <div class="container">
+      <div class="section-title aos aos-bottom">
+        <span>AREA A</span>
+        <h2>Ruang Penerimaan</h2>
+        <p>
+          Dengan area resepsionis yang hangat, kami memastikan kunjungan Anda
+          terasa nyaman sejak langkah pertama.
+        </p>
+      </div>
 
-          <ul class="facility-features">
-            @foreach ($ruang->fiturs as $fitur)
+      <div class="facilities-grid aos aos-bottom">
+        @foreach ($ruangpenerimaan as $ruang)
+        <div class="facility-card">
+          <div class="facility-image">
+            <img src="/api/placeholder/500/300" alt="{{ $ruang->nama }}" />
+          </div>
+          <div class="facility-content">
+            <h3>{{ $ruang->nama }}</h3>
+            <p>{{ $ruang->deskripsi }}</p>
+
+            <ul class="facility-features">
+              @foreach ($ruang->fiturs as $fitur)
               <li>
                 <i class="fas fa-check-circle"></i> {{ $fitur->nama_fitur }}
               </li>
-            @endforeach
-          </ul>
+              @endforeach
+            </ul>
 
+          </div>
         </div>
+        @endforeach
       </div>
-      @endforeach
     </div>
-  </div>
-</section>
+  </section>
 
 <!-- Medical Service Areas -->
 <section class="facilities-section" id="medical-services">

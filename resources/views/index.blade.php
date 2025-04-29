@@ -28,8 +28,8 @@
           <li><a href="#">Home</a></li>
           <li><a href="#services">Layanan</a></li>
           <li><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
-          <li><a href="#team">Tenaga Kesehatan</a></li>
-          <li><a href="#testimonials">Tentang Kami</a></li>
+          <li><a href="{{ route('tenaga-kesehatan') }}">Tenaga Kesehatan</a></li>
+          <li><a href="{{ route('tentang-kami') }}">Tentang Kami</a></li>
         </ul>
         <div class="nav-right">
           <a href="#appointment" class="btn">
