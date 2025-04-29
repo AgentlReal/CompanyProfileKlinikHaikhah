@@ -9,7 +9,7 @@ class RuangBcontroller extends Controller
 {
     public function index()
     {
-        $ruangb = RuangB::all();
+        $ruangb= RuangB::all();
         return view('fasilitas', ['ruangb' => $ruangb]);
     }
 

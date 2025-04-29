@@ -103,42 +103,42 @@
     </div>
   </section>
 
-  <!-- Medical Service Areas -->
-  <section class="facilities-section" id="medical-services">
-    <div class="container">
-      <div class="section-title aos aos-bottom">
-        <span>AREA B</span>
-        <h2>Ruang Pelayanan Medik</h2>
-        <p>
-          Area layanan medis kami didesain khusus dengan teknologi canggih
-          untuk memberikan perawatan yang menyeluruh
-        </p>
-      </div>
-
-      <div class="facilities-grid aos aos-bottom">
-        @foreach ($ruangb as $ruang)
-        <div class="facility-card">
-          <div class="facility-image">
-            {{-- Kalau nanti ada gambar, tinggal load disini --}}
-            <img src="{{ $ruang->gambar ?? '' }}" alt="{{ $ruang->nama }}">
-          </div>
-          <div class="facility-content">
-            <h3>{{ $ruang->nama }}</h3>
-            <p>{{ $ruang->deskripsi }}</p>
-            @if($ruang->fiturs->count() > 0)
-            <ul class="facility-features">
-              @foreach ($ruang->fiturs as $fitur)
-              <li><i class="fas fa-check-circle"></i> {{ $fitur->nama_fitur }}</li>
-              @endforeach
-            </ul>
-            @endif
-          </div>
-        </div>
-        @endforeach
-      </div>
-
+<!-- Medical Service Areas -->
+<section class="facilities-section" id="medical-services">
+  <div class="container">
+    <div class="section-title aos aos-bottom">
+      <span>AREA B</span>
+      <h2>Ruang Pelayanan Medik</h2>
+      <p>
+        Area layanan medis kami didesain khusus dengan teknologi canggih
+        untuk memberikan perawatan yang menyeluruh
+      </p>
     </div>
-  </section>
+
+
+    <div class="facilities-grid aos aos-bottom">
+      @foreach ($ruangb as $ruang)
+      <div class="facility-card">
+        <div class="facility-image">
+          {{-- Kalau nanti ada gambar, tinggal load di sini --}}
+          <img src="{{ $ruang->gambar ?? '' }}" alt="{{ $ruang->nama }}">
+        </div>
+        <div class="facility-content">
+          <h3>{{ $ruang->nama }}</h3>
+          <p>{{ $ruang->deskripsi }}</p>
+          @if($ruang->fiturs->count() > 0)
+          <ul class="facility-features">
+            @foreach ($ruang->fiturs as $fitur)
+            <li><i class="fas fa-check-circle"></i> {{ $fitur->nama_fitur }}</li>
+            @endforeach
+          </ul>
+          @endif
+        </div>
+      </div>
+      @endforeach
+    </div>
+  </div>
+</section>
 
 
   <!-- Support Services -->
