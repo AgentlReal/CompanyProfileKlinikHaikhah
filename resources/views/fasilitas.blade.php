@@ -103,76 +103,73 @@
     </div>
   </section>
 
-<!-- Medical Service Areas -->
-<section class="facilities-section" id="medical-services">
-  <div class="container">
-    <div class="section-title aos aos-bottom">
-      <span>AREA B</span>
-      <h2>Ruang Pelayanan Medik</h2>
-      <p>
-        Area layanan medis kami didesain khusus dengan teknologi canggih
-        untuk memberikan perawatan yang menyeluruh
-      </p>
-    </div>
-
-
-    <div class="facilities-grid aos aos-bottom">
-      @foreach ($ruangb as $ruang)
-      <div class="facility-card">
-        <div class="facility-image">
-          {{-- Kalau nanti ada gambar, tinggal load di sini --}}
-          <img src="{{ $ruang->gambar ?? '' }}" alt="{{ $ruang->nama }}">
-        </div>
-        <div class="facility-content">
-          <h3>{{ $ruang->nama }}</h3>
-          <p>{{ $ruang->deskripsi }}</p>
-          <ul class="facility-features">
-            @foreach ($ruang->fiturs as $fiturb)
-            <li><i class="fas fa-check-circle"></i> {{ $fiturb->nama_fitur }}</li>
-            @endforeach
-          </ul>
-        </div>
+  <!-- Medical Service Areas -->
+  <section class="facilities-section" id="medical-services">
+    <div class="container">
+      <div class="section-title aos aos-bottom">
+        <span>AREA B</span>
+        <h2>Ruang Pelayanan Medik</h2>
+        <p>
+          Area layanan medis kami didesain khusus dengan teknologi canggih
+          untuk memberikan perawatan yang menyeluruh
+        </p>
       </div>
-      @endforeach
+
+      <div class="facilities-grid aos aos-bottom">
+        @foreach ($ruangb as $ruang)
+        <div class="facility-card">
+          <div class="facility-image">
+            {{-- Kalau nanti ada gambar, tinggal load di sini --}}
+            <img src="{{ $ruang->gambar ?? '' }}" alt="{{ $ruang->nama }}">
+          </div>
+          <div class="facility-content">
+            <h3>{{ $ruang->nama }}</h3>
+            <p>{{ $ruang->deskripsi }}</p>
+            <ul class="facility-features">
+              @foreach ($ruang->fiturs as $fiturb)
+              <li><i class="fas fa-check-circle"></i> {{ $fiturb->nama_fitur }}</li>
+              @endforeach
+            </ul>
+          </div>
+        </div>
+        @endforeach
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Support Services -->
+  <section class="facilities-section" id="support-services">
+    <div class="container">
+      <div class="section-title aos aos-bottom">
+        <span>AREA C</span>
+        <h2>Ruang Penunjang Medik</h2>
+        <p>
+          Layanan pendukung kami memanfaatkan teknologi mutakhir untuk
+          mendukung diagnosis dan pengobatan yang akurat
+        </p>
+      </div>
 
-<!-- Support Services -->
-<section class="facilities-section" id="support-services">
-  <div class="container">
-    <div class="section-title aos aos-bottom">
-      <span>AREA C</span>
-      <h2>Ruang Penunjang Medik</h2>
-      <p>
-        Layanan pendukung kami memanfaatkan teknologi mutakhir untuk
-        mendukung diagnosis dan pengobatan yang akurat
-      </p>
-    </div>
-
-    <div class="facilities-grid aos aos-bottom">
-      @foreach ($areac as $area)
+      <div class="facilities-grid aos aos-bottom">
+        @foreach ($areac as $area)
         <div class="facility-card">
           <div class="facility-image">
             <!-- Optional: ganti src dengan URL gambar dari DB kalau ada -->
-            <img src="{{ asset('images/default.jpg') }}" alt="{{ $area->nama }}" />
+            <img src="{{ asset('images/default.jpg') }}" alt="{{ $area->nama }}">
           </div>
           <div class="facility-content">
             <h3>{{ $area->nama }}</h3>
             <p>{{ $area->deskripsi }}</p>
-              <ul class="facility-features">
-                @foreach ($area->fiturs as $fitur)
-                  <li><i class="fas fa-check-circle"></i> {{ $fitur->nama_fitur }}</li>
-                @endforeach
-              </ul>
+            <ul class="facility-features">
+              @foreach ($area->fiturs as $fitur)
+              <li><i class="fas fa-check-circle"></i> {{ $fitur->nama_fitur }}</li>
+              @endforeach
+            </ul>
           </div>
         </div>
-      @endforeach
+        @endforeach
+      </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- Non-Medical Support Areas -->
   <section class="facilities-section" id="non-medical">
@@ -185,92 +182,29 @@
           pasien dan keluarga yang menunggu
         </p>
       </div>
+
       <div class="facilities-grid aos aos-bottom">
+        @foreach ($aread as $area)
         <div class="facility-card">
           <div class="facility-image">
-            <img src="" alt="Restrooms" />
+            <!-- Optional: ganti src dengan URL gambar dari DB kalau ada -->
+            <img src="{{ asset('images/default.jpg') }}" alt="{{ $area->nama }}">
           </div>
           <div class="facility-content">
-            <h3>Toilet Umum</h3>
-            <p>
-              Fasilitas toilet bersih dan mudah diakses yang tersedia di
-              berbagai area klinik, termasuk fasilitas ramah pengguna kursi
-              roda.
-            </p>
+            <h3>{{ $area->nama }}</h3>
+            <p>{{ $area->deskripsi }}</p>
             <ul class="facility-features">
-              <li><i class="fas fa-check-circle"></i> Akses kursi roda</li>
-              <li>
-                <i class="fas fa-check-circle"></i> Tempat ganti popok bayi
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Perlengkapan kebersihan
-                tersedia
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Jadwal pembersihan rutin
-              </li>
+              @foreach ($area->fiturs as $fitur)
+              <li><i class="fas fa-check-circle"></i> {{ $fitur->nama_fitur }}</li>
+              @endforeach
             </ul>
           </div>
         </div>
-        <div class="facility-card">
-          <div class="facility-image">
-            <img src="" alt="Staff Room" />
-          </div>
-          <div class="facility-content">
-            <h3>Ruang Staff</h3>
-            <p>
-              Ruang khusus bagi tenaga medis dan staff untuk beristirahat,
-              berkoordinasi, dan mempersiapkan diri sebelum bertugas.
-            </p>
-            <ul class="facility-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Area istirahat dengan
-                tempat duduk
-              </li>
-              <li><i class="fas fa-check-circle"></i> Dapur kecil</li>
-              <li>
-                <i class="fas fa-check-circle"></i> Loker untuk barang pribadi
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Papan informasi staf
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="facility-card">
-          <div class="facility-image">
-            <img src="" alt="Parking Lot" />
-          </div>
-          <div class="facility-content">
-            <h3>Tempat Parkir Kendaraan</h3>
-            <p>
-              Area parkir yang luas dan aman untuk kendaraan roda dua maupun
-              roda empat, tersedia bagi pasien, pengunjung, dan staf, dengan
-              akses yang mudah ke seluruh fasilitas klinik.
-            </p>
-            <ul class="facility-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Kapasitas memadai untuk
-                mobil dan motor
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Sistem keamanan 24 jam
-                (CCTV & petugas keamanan)
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Akses langsung ke pintu
-                masuk klinik
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Area parkir khusus untuk
-                difabel
-              </li>
-            </ul>
-          </div>
-        </div>
+        @endforeach
       </div>
     </div>
   </section>
+
   <!-- Footer -->
   <footer id="contact">
     <div class="container">
