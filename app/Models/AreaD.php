@@ -4,10 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class AreadD extends Model
+class AreaD extends Model
 {
-    protected $table = 'area_d'; 
-    protected $primaryKey = 'ruang_id'; 
+    protected $table = 'area_d';
+    protected $primaryKey = 'ruang_id';
     protected $fillable = ['nama', 'deskripsi'];
     public $timestamps = false;
 

@@ -7,13 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class RuangB extends Model
 {
     protected $table = 'ruang_b';
-    protected $primaryKey = 'ruang_id'; // Pastikan primary key benar
+    protected $primaryKey = 'ruang_id';
     protected $fillable = ['nama', 'deskripsi'];
-    public $timestamps = false; // Tambahkan ini jika tidak menggunakan timestamp
+    public $timestamps = false;
 
     public function fiturs()
     {
-        // Berdasarkan struktur database di gambar
         return $this->hasMany(FiturB::class, 'ruang_id', 'ruang_id');
     }
 }
