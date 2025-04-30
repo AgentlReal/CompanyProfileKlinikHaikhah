@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/logo-klinik.png" type="image/png" />
     <title>Klinik Haikhah</title>
-    <link
-        rel="stylesheet"
-        href="modules/fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="modules/fontawesome-free-6.7.2-web/css/all.min.css" />
     <link rel="stylesheet" href="{{ asset('css/global.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/tentang-kami.css') }}" />
 </head>
@@ -26,13 +24,13 @@
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                     <li><a href="{{ route('index') }}">Home</a></li>
-                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="{{ route('layanan') }}">Layanan</a></li>
                     <li><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
                     <li><a href="{{ route('tenaga-kesehatan') }}">Tenaga Kesehatan</a></li>
                     <li><a href="#">Tentang Kami</a></li>
                 </ul>
                 <div class="nav-right">
-                    <a href="#" class="btn">
+                    <a href="{{ route('janji-temu') }}" class="btn">
                         <p class="btn-p">Buat Janji Temu</p>
                         <i class="fa-brands fa-whatsapp btn-icon"></i>
                     </a>
@@ -104,70 +102,21 @@
                 <h2>Misi & Nilai Kami</h2>
             </div>
             <div class="mission-values-grid">
+                @foreach ($misinilai as $misi)
                 <div class="mission-box aos aos-bottom">
-                    <h3><i class="fas fa-bullseye"></i> Misi Kami</h3>
+                    <h3><i class="fas fa-bullseye"></i>{{ $misi->judul }}</h3>
                     <div class="values-list">
+                        @foreach($misi->fiturs as $fitur)
                         <div class="values-item">
                             <i class="fas fa-check-circle"></i>
                             <div>
-                                <strong>Mewujudkan pelayanan yang bermutu </strong> -
-                                Memberikan layanan kesehatan yang aman, efektif, dan
-                                berorientasi pasien.
+                                {{ $fitur->List_item }}
                             </div>
                         </div>
-                        <div class="values-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Mewujudkan pelayanan yang profesional </strong> -
-                                Menyediakan tenaga medis terlatih dengan standar etika yang
-                                tinggi.
-                            </div>
-                        </div>
-                        <div class="values-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Mewujudkan pelayanan yang terjangkau</strong> -
-                                Memberikan akses layanan kesehatan berkualitas dengan biaya
-                                yang rasional.
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
-                <div class="values-box aos aos-bottom">
-                    <h3><i class="fas fa-heart"></i> Nilai-Nilai Kami</h3>
-                    <div class="values-list">
-                        <div class="values-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Kepedulian & Empati</strong> - Kami menempatkan
-                                kesejahteraan pasien sebagai prioritas utama dalam setiap
-                                interaksi dan keputusan medis.
-                            </div>
-                        </div>
-                        <div class="values-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Profesionalisme</strong> - Kami menjunjung tinggi
-                                standar etika dan kompetensi medis dalam memberikan layanan
-                                kesehatan.
-                            </div>
-                        </div>
-                        <div class="values-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Inovasi</strong> - Kami terus mengembangkan metode
-                                perawatan dan layanan mengikuti perkembangan ilmu kedokteran.
-                            </div>
-                        </div>
-                        <div class="values-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Integritas</strong> - Kami menjalankan praktik dengan
-                                kejujuran dan transparansi dalam semua aspek layanan.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

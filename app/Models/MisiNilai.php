@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class MisiNilai extends Model
 {
-    protected $table = 'misi_nilai'; 
-    protected $primaryKey = 'id_misinilai'; 
+    protected $table = 'misi_nilai';
+    protected $primaryKey = 'id_misinilai';
     protected $fillable = ['judul'];
     public $timestamps = false;
 
