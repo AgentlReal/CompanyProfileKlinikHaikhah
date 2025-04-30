@@ -8,9 +8,7 @@
     <title>Tenaga Kesehatan - Klinik Haikhah</title>
     <link rel="stylesheet" href="{{ asset('css/global.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/tenaga-kesehatan.css') }}" />
-    <link
-        rel="stylesheet"
-        href="modules/fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="modules/fontawesome-free-6.7.2-web/css/all.min.css" />
 </head>
 
 <body>
@@ -26,13 +24,13 @@
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                     <li><a href="{{ route('index') }}">Home</a></li>
-                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="{{ route('layanan') }}">Layanan</a></li>
                     <li><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
                     <li><a href="#">Tenaga Kesehatan</a></li>
                     <li><a href="{{ route('tentang-kami') }}">Tentang Kami</a></li>
                 </ul>
                 <div class="nav-right">
-                    <a href="#appointment" class="btn">
+                    <a href="{{ route('janji-temu') }}" class="btn">
                         <p class="btn-p">Buat Janji Temu</p>
                         <i class="fa-brands fa-whatsapp btn-icon"></i>
                     </a>

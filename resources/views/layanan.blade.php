@@ -8,9 +8,7 @@
     <title>Layanan - Klinik Haikhah</title>
     <link rel="stylesheet" href="{{ asset('css/global.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/layanan.css') }}" />
-    <link
-        rel="stylesheet"
-        href="modules/fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="modules/fontawesome-free-6.7.2-web/css/all.min.css" />
 </head>
 
 <body>
@@ -25,14 +23,14 @@
                     <button class="nav-icon nav-icon-x">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#" class="active">Layanan</a></li>
-                    <li><a href="fasilitas.html">Fasilitas</a></li>
-                    <li><a href="index.html#team">Tenaga Kesehatan</a></li>
-                    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                    <li><a href="{{ route('index') }}">Home</a></li>
+                    <li><a href="#">Layanan</a></li>
+                    <li><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
+                    <li><a href="{{ route('tenaga-kesehatan') }}">Tenaga Kesehatan</a></li>
+                    <li><a href="{{ route('tentang-kami') }}">Tentang Kami</a></li>
                 </ul>
                 <div class="nav-right">
-                    <a href="#appointment" class="btn">
+                    <a href="{{ route('janji-temu') }}" class="btn">
                         <p class="btn-p">Buat Janji Temu</p>
                         <i class="fa-brands fa-whatsapp btn-icon"></i>
                     </a>
@@ -89,9 +87,7 @@
 
             <div class="services-grid">
                 <!-- Umum -->
-                <div
-                    class="service-card aos aos-bottom delay-300"
-                    data-category="umum">
+                <div class="service-card aos aos-bottom delay-300" data-category="umum">
                     <div class="service-icon">
                         <i class="fa-solid fa-user-doctor"></i>
                     </div>
@@ -104,9 +100,7 @@
                         Selengkapnya <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
-                <div
-                    class="service-card aos aos-bottom delay-300"
-                    data-category="umum">
+                <div class="service-card aos aos-bottom delay-300" data-category="umum">
                     <div class="service-icon">
                         <i class="fa-solid fa-venus-mars"></i>
                     </div>
@@ -119,9 +113,7 @@
                         Selengkapnya <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
-                <div
-                    class="service-card aos aos-bottom delay-300"
-                    data-category="umum">
+                <div class="service-card aos aos-bottom delay-300" data-category="umum">
                     <div class="service-icon">
                         <i class="fa-solid fa-vials"></i>
                     </div>
@@ -134,9 +126,7 @@
                         Selengkapnya <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
-                <div
-                    class="service-card aos aos-bottom delay-300"
-                    data-category="umum">
+                <div class="service-card aos aos-bottom delay-300" data-category="umum">
                     <div class="service-icon">
                         <i class="fa-solid fa-prescription-bottle-medical"></i>
                     </div>
@@ -151,9 +141,7 @@
                 </div>
 
                 <!-- Spesialis -->
-                <div
-                    class="service-card aos aos-bottom delay-300"
-                    data-category="spesialis">
+                <div class="service-card aos aos-bottom delay-300" data-category="spesialis">
                     <div class="service-icon">
                         <i class="fa-solid fa-bed-pulse"></i>
                     </div>
@@ -166,9 +154,7 @@
                         Selengkapnya <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
-                <div
-                    class="service-card aos aos-bottom delay-300"
-                    data-category="spesialis">
+                <div class="service-card aos aos-bottom delay-300" data-category="spesialis">
                     <div class="service-icon">
                         <i class="fa-solid fa-baby"></i>
                     </div>
@@ -181,9 +167,7 @@
                         Selengkapnya <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
-                <div
-                    class="service-card aos aos-bottom delay-300"
-                    data-category="spesialis">
+                <div class="service-card aos aos-bottom delay-300" data-category="spesialis">
                     <div class="service-icon">
                         <i class="fa-solid fa-microscope"></i>
                     </div>
@@ -196,9 +180,7 @@
                         Selengkapnya <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
-                <div
-                    class="service-card aos aos-bottom delay-300"
-                    data-category="spesialis">
+                <div class="service-card aos aos-bottom delay-300" data-category="spesialis">
                     <div class="service-icon">
                         <i class="fa-solid fa-person-walking"></i>
                     </div>
@@ -211,9 +193,7 @@
                         Selengkapnya <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
-                <div
-                    class="service-card aos aos-bottom delay-300"
-                    data-category="spesialis">
+                <div class="service-card aos aos-bottom delay-300" data-category="spesialis">
                     <div class="service-icon">
                         <i class="fa-solid fa-wave-square"></i>
                     </div>
@@ -228,9 +208,7 @@
                 </div>
 
                 <!-- Gigi -->
-                <div
-                    class="service-card aos aos-bottom delay-300"
-                    data-category="gigi">
+                <div class="service-card aos aos-bottom delay-300" data-category="gigi">
                     <div class="service-icon">
                         <i class="fa-solid fa-tooth"></i>
                     </div>
@@ -245,9 +223,7 @@
                 </div>
 
                 <!-- Anak -->
-                <div
-                    class="service-card aos aos-bottom delay-300"
-                    data-category="anak">
+                <div class="service-card aos aos-bottom delay-300" data-category="anak">
                     <div class="service-icon">
                         <i class="fa-solid fa-syringe"></i>
                     </div>
@@ -260,9 +236,7 @@
                         Selengkapnya <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
-                <div
-                    class="service-card aos aos-bottom delay-300"
-                    data-category="anak">
+                <div class="service-card aos aos-bottom delay-300" data-category="anak">
                     <div class="service-icon">
                         <i class="fa-solid fa-scissors"></i>
                     </div>
