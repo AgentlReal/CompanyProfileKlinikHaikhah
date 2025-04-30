@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AreaC;
 use Illuminate\Http\Request;
+use App\Models\AreaC;
 
 class AreaCcontroller extends Controller
 {
     public function index()
     {
-        $areac= AreaC::all();
+        $areac = AreaC::all();
         return view('fasilitas', ['areac' => $areac]);
     }
 
@@ -21,7 +21,7 @@ class AreaCcontroller extends Controller
 
     public function update(Request $request, $id)
     {
-        $areac= AreaC::findOrFail($id);
+        $areac = AreaC::findOrFail($id);
         $areac->update($request->all());
         return redirect()->back();
     }
