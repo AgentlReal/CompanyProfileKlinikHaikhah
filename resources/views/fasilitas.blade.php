@@ -126,13 +126,11 @@
         <div class="facility-content">
           <h3>{{ $ruang->nama }}</h3>
           <p>{{ $ruang->deskripsi }}</p>
-          @if($ruang->fiturs->count() > 0)
           <ul class="facility-features">
-            @foreach ($ruang->fiturs as $fitur)
-            <li><i class="fas fa-check-circle"></i> {{ $fitur->nama_fitur }}</li>
+            @foreach ($ruang->fiturs as $fiturb)
+            <li><i class="fas fa-check-circle"></i> {{ $fiturb->nama_fitur }}</li>
             @endforeach
           </ul>
-          @endif
         </div>
       </div>
       @endforeach
@@ -141,48 +139,40 @@
 </section>
 
 
-  <!-- Support Services -->
-  <section class="facilities-section" id="support-services">
-    <div class="container">
-      <div class="section-title aos aos-bottom">
-        <span>AREA C</span>
-        <h2>Ruang Penunjang Medik</h2>
-        <p>
-          Layanan pendukung kami memanfaatkan teknologi mutakhir untuk
-          mendukung diagnosis dan pengobatan yang akurat
-        </p>
-      </div>
-      <div class="facilities-grid aos aos-bottom">
+<!-- Support Services -->
+<section class="facilities-section" id="support-services">
+  <div class="container">
+    <div class="section-title aos aos-bottom">
+      <span>AREA C</span>
+      <h2>Ruang Penunjang Medik</h2>
+      <p>
+        Layanan pendukung kami memanfaatkan teknologi mutakhir untuk
+        mendukung diagnosis dan pengobatan yang akurat
+      </p>
+    </div>
+
+    <div class="facilities-grid aos aos-bottom">
+      @foreach ($areac as $area)
         <div class="facility-card">
           <div class="facility-image">
-            <img src="" alt="Pharmacy" />
+            <!-- Optional: ganti src dengan URL gambar dari DB kalau ada -->
+            <img src="{{ asset('images/default.jpg') }}" alt="{{ $area->nama }}" />
           </div>
           <div class="facility-content">
-            <h3>Apotek</h3>
-            <p>
-              Apotek internal kami menyediakan obat resep, produk kesehatan
-              umum, serta layanan konsultasi obat bagi pasien.
-            </p>
-            <ul class="facility-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Stok obat yang lengkap
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Sistem verifikasi resep
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Area konsultasi obat
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Penyimpanan suhu
-                terkontrol
-              </li>
-            </ul>
+            <h3>{{ $area->nama }}</h3>
+            <p>{{ $area->deskripsi }}</p>
+              <ul class="facility-features">
+                @foreach ($area->fiturs as $fitur)
+                  <li><i class="fas fa-check-circle"></i> {{ $fitur->nama_fitur }}</li>
+                @endforeach
+              </ul>
           </div>
         </div>
-      </div>
+      @endforeach
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Non-Medical Support Areas -->
   <section class="facilities-section" id="non-medical">
