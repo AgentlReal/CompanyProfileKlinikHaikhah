@@ -121,190 +121,77 @@
         </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section class="section achievements" id="achievements">
-        <div class="container">
-            <div class="section-title">
-                <h2>Pencapaian Kami</h2>
-            </div>
-            <div class="achievements-grid">
-                <div class="achievement-card aos aos-bottom">
-                    <div class="achievement-icon">
-                        <i class="fas fa-user-md"></i>
-                    </div>
-                    <h3>20+</h3>
-                    <p>Tahun Pengalaman</p>
-                </div>
-                <div class="achievement-card aos aos-bottom">
-                    <div class="achievement-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>50000+</h3>
-                    <p>Pasien Terlayani</p>
-                </div>
-                <div class="achievement-card aos aos-bottom">
-                    <div class="achievement-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>15+</h3>
-                    <p>Penghargaan & Sertifikasi</p>
-                </div>
-                <div class="achievement-card aos aos-bottom">
-                    <div class="achievement-icon">
-                        <i class="fas fa-hand-holding-medical"></i>
-                    </div>
-                    <h3 class="percent-value">98%</h3>
-                    <p>Kepuasan Pasien</p>
-                </div>
-            </div>
+ <!-- Achievements Section -->
+<section class="section achievements" id="achievements">
+    <div class="container">
+        <div class="section-title">
+            <h2>Pencapaian Kami</h2>
         </div>
-    </section>
+        <div class="achievements-grid">
+            @foreach ($pencapaian as $item)
+                <div class="achievement-card aos aos-bottom">
+                    <div class="achievement-icon">
+                        <i class="{{ $item->icon }}"></i>
+                    </div>
+                    <h3>{{ $item->value }}{{ $item->unit }}</h3>
+                    <p>{{ $item->tipe }}</p>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
 
-    <!-- Timeline Section -->
-    <section class="timeline-section" id="timeline">
-        <div class="container">
-            <div class="section-title">
-                <h2>Perjalanan Kami</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content aos aos-bottom">
-                        <span class="timeline-date">2001</span>
-                        <h3>Awal Pendirian</h3>
-                        <p>
-                            Klinik Haikhah didirikan oleh Muhammad Khairun Anwar dan Dr.
-                            Nihayatus Solikhah sebagai klinik kecil dengan tiga ruang
-                            perawatan dan fokus pada layanan umum.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content aos aos-bottom">
-                        <span class="timeline-date">2005</span>
-                        <h3>Perluasan Layanan</h3>
-                        <p>
-                            Penambahan layanan pediatri dan geriatri, serta meluncurkan
-                            program kemitraan dengan asuransi kesehatan pertama.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content aos aos-bottom">
-                        <span class="timeline-date">2010</span>
-                        <h3>Renovasi Besar Pertama</h3>
-                        <p>
-                            Ekspansi fasilitas dan penambahan layanan rawat inap terbatas
-                            dengan kapasitas 10 tempat tidur.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content aos aos-bottom">
-                        <span class="timeline-date">2015</span>
-                        <h3>Modernisasi Teknologi</h3>
-                        <p>
-                            Implementasi sistem rekam medis elektronik dan penambahan
-                            departemen gigi modern dengan teknologi terkini.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content aos aos-bottom">
-                        <span class="timeline-date">2020</span>
-                        <h3>Layanan Home Care</h3>
-                        <p>
-                            Peluncuran program home care untuk pasien lanjut usia dan
-                            penderita penyakit kronis yang membutuhkan perawatan di rumah.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content aos aos-bottom">
-                        <span class="timeline-date">2022</span>
-                        <h3>Integrasi Telemedicine</h3>
-                        <p>
-                            Pengembangan platform telemedicine untuk konsultasi jarak jauh,
-                            memudahkan akses layanan kesehatan bagi semua kalangan.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Team Section -->
-    <section class="team-section" id="leadership">
-        <div class="container">
-            <div class="section-title">
-                <h2>Tim Manajemen</h2>
-            </div>
-            <div class="management-team">
-                <div class="team-member aos aos-bottom">
-                    <div class="member-image">
-                        <img src="" alt="Muhammad Khairun Anwar" />
-                    </div>
-                    <div class="member-info">
-                        <h3>Muhammad Khairun Anwar</h3>
-                        <span>Pendiri</span>
-                        <p>
-                            Dokter umum berpengalaman dengan spesialisasi di bidang
-                            kedokteran keluarga. Memimpin Klinik Haikhah dengan visi
-                            memberikan layanan kesehatan berkualitas tinggi yang terjangkau.
-                        </p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-member aos aos-bottom">
-                    <div class="member-image">
-                        <img src="" alt="Dr. Nihayatus Solikhah" />
-                    </div>
-                    <div class="member-info">
-                        <h3>Dr. Nihayatus Solikhah</h3>
-                        <span>Pendiri & Direktur Medis</span>
-                        <p>
-                            Dokter spesialis penyakit dalam dengan pengalaman lebih dari 25
-                            tahun. Bertanggung jawab atas standar medis dan pengembangan
-                            layanan kesehatan baru.
-                        </p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-member aos aos-bottom">
-                    <div class="member-image">
-                        <img src="" alt="Dewi Safitri" />
-                    </div>
-                    <div class="member-info">
-                        <h3>Ayu</h3>
-                        <span>Manajer Operasional</span>
-                        <p>
-                            Profesional berpengalaman di bidang manajemen kesehatan dengan
-                            fokus pada peningkatan efisiensi operasional dan kualitas
-                            layanan pasien.
-                        </p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Timeline Section -->
+<section class="timeline-section" id="timeline">
+    <div class="container">
+        <div class="section-title">
+            <h2>Perjalanan Kami</h2>
         </div>
-    </section>
+        <div class="timeline">
+            @foreach ($perjalanan as $item)
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content aos aos-bottom">
+                        <span class="timeline-date">{{ $item->tahun }}</span>
+                        <h3>{{ $item->judul }}</h3>
+                        <p>{{ $item->deskripsi }}</p>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+
+   <!-- Team Section -->
+<section class="team-section" id="leadership">
+    <div class="container">
+        <div class="section-title">
+            <h2>Tim Manajemen</h2>
+        </div>
+        <div class="management-team">
+            @foreach($timmanajemen as $anggota)
+            <div class="team-member aos aos-bottom">
+                <div class="member-image">
+                    <img src="{{ asset('path-ke-foto-default.jpg') }}" alt="{{ $anggota->nama }}" />
+                </div>
+                <div class="member-info">
+                    <h3>{{ $anggota->nama }}</h3>
+                    <span>{{ $anggota->spesialis }}</span>
+                    <p>{{ $anggota->deskripsi }}</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer id="contact">
