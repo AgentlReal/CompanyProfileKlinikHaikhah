@@ -9,8 +9,7 @@ class JanjiTemuController extends Controller
 {
     public function index()
     {
-       
-        return view('janji-temu'); 
+        return view('janji-temu');
     }
 
     public function store(Request $request)
@@ -30,6 +29,4 @@ class JanjiTemuController extends Controller
 
         return redirect()->back()->with('success', 'Janji berhasil dibuat!');
     }
-
-   
 }
