@@ -23,7 +23,7 @@
           <button class="nav-icon nav-icon-x">
             <i class="fa-solid fa-xmark"></i>
           </button>
-          <li><a href="#">Home</a></li>
+          <li><a href="{{ route('index') }}">Home</a></li>
           <li><a href="{{ route('layanan') }}">Layanan</a></li>
           <li><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
           <li><a href="{{ route('tenaga-kesehatan') }}">Tenaga Kesehatan</a></li>
@@ -54,7 +54,7 @@
             pasien dalam lingkungan yang hommy, menjadikan setiap kunjungan
             Anda aman, nyaman, dan personal.
           </p>
-          <a href="#appointment" class="btn">
+          <a href="{{ route('janji-temu') }}" class="btn">
             <p class="btn-p">Buat Janji Temu</p>
             <i class="fa-solid fa-pen-to-square btn-icon"></i>
           </a>
@@ -201,7 +201,7 @@
           atau jadwalkan janji temu secara online.
         </p>
         <div class="cta-buttons">
-          <a href="#" class="btn-jt">
+          <a href="{{ route('janji-temu') }}" class="btn-jt">
             <p class="btn-p">Buat Janji Temu</p>
             <i class="fa-solid fa-pen-to-square btn-icon"></i>
           </a>
@@ -227,11 +227,11 @@
         <div class="footer-col">
           <h3>Quick Links</h3>
           <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#services">Layanan</a></li>
-            <li><a href="fasilitas.html">Fasilitas</a></li>
-            <li><a href="#team">Tenaga Medis</a></li>
-            <li><a href="#testimonials">Tentang Kami</a></li>
+            <li><a href="{{ route('index') }}">Home</a></li>
+            <li><a href="{{ route('layanan') }}">Layanan</a></li>
+            <li><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
+            <li><a href="{{ route('tenaga-kesehatan') }}">Tenaga Kesehatan</a></li>
+            <li><a href="{{ route('tentang-kami') }}">Tentang Kami</a></li>
           </ul>
         </div>
         <div class="footer-col">
