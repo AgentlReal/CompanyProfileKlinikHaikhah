@@ -81,70 +81,70 @@
                 </div>
 
                 <div class="appointment-form">
-                <form id="appointmentForm" method="POST" action="{{ route('janji.temu.store') }}">
-    @csrf
-    <div class="form-row">
-        <div class="form-group">
-            <label for="name">Nama Lengkap</label>
-            <input type="text" id="name" name="nama_lengkap" required />
-        </div>
+                    <form id="appointmentForm" method="POST" action="{{ route('janji-temu.store') }}">
+                        @csrf
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" name="nama_lengkap" required />
+                            </div>
 
-        <div class="form-group">
-            <label for="phone">Nomor Telepon</label>
-            <input type="tel" id="phone" name="nomor_telepon" required />
-        </div>
-    </div>
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon</label>
+                                <input type="tel" id="phone" name="nomor_telepon" required />
+                            </div>
+                        </div>
 
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" />
-    </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" />
+                        </div>
 
-    <div class="form-group">
-        <label for="service">Layanan</label>
-        <select id="service" name="layanan" required>
-            <option value="">Pilih Layanan</option>
-            <option value="Konsultasi Umum">Konsultasi Umum</option>
-            <option value="Konsultasi Spesialis">Konsultasi Spesialis</option>
-            <option value="Perawatan Gigi">Perawatan Gigi</option>
-            <option value="Kesehatan Anak">Kesehatan Anak</option>
-            <option value="Medical Check-up">Medical Check-up</option>
-        </select>
-    </div>
+                        <div class="form-group">
+                            <label for="service">Layanan</label>
+                            <select id="service" name="layanan" required>
+                                <option value="">Pilih Layanan</option>
+                                <option value="Konsultasi Umum">Konsultasi Umum</option>
+                                <option value="Konsultasi Spesialis">Konsultasi Spesialis</option>
+                                <option value="Perawatan Gigi">Perawatan Gigi</option>
+                                <option value="Kesehatan Anak">Kesehatan Anak</option>
+                                <option value="Medical Check-up">Medical Check-up</option>
+                            </select>
+                        </div>
 
-    <div class="form-row">
-        <div class="form-group">
-            <label for="date">Tanggal</label>
-            <input type="date" id="date" name="tanggal" required />
-        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Tanggal</label>
+                                <input type="date" id="date" name="tanggal" required />
+                            </div>
 
-        <div class="form-group">
-            <label for="time">Waktu</label>
-            <select id="time" name="waktu" required>
-                <option value="">Pilih Waktu</option>
-                <option value="09:00">09:00</option>
-                <option value="10:00">10:00</option>
-                <option value="11:00">11:00</option>
-                <option value="13:00">13:00</option>
-                <option value="14:00">14:00</option>
-                <option value="15:00">15:00</option>
-                <option value="16:00">16:00</option>
-            </select>
-        </div>
-    </div>
+                            <div class="form-group">
+                                <label for="time">Waktu</label>
+                                <select id="time" name="waktu" required>
+                                    <option value="">Pilih Waktu</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                </select>
+                            </div>
+                        </div>
 
-    <div class="form-group">
-        <label for="symptoms">Keluhan/Gejala</label>
-        <textarea id="symptoms" name="Keluhan_Gejala"></textarea>
-    </div>
+                        <div class="form-group">
+                            <label for="symptoms">Keluhan/Gejala</label>
+                            <textarea id="symptoms" name="Keluhan_Gejala"></textarea>
+                        </div>
 
-    <div class="form-group">
-        <label for="notes">Catatan Tambahan (Opsional)</label>
-        <textarea id="notes" name="catatan_tambahan"></textarea>
-    </div>
+                        <div class="form-group">
+                            <label for="notes">Catatan Tambahan (Opsional)</label>
+                            <textarea id="notes" name="catatan_tambahan"></textarea>
+                        </div>
 
-    <button type="submit" class="submit-btn">Kirim</button>
-</form>
+                        <button type="submit" class="submit-btn">Kirim</button>
+                    </form>
 
                 </div>
             </div>
@@ -167,11 +167,11 @@
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="layanan.html">Layanan</a></li>
-                        <li><a href="fasilitas.html">Fasilitas</a></li>
-                        <li><a href="index.html#team">Tenaga Medis</a></li>
-                        <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                        <li><a href="{{ route('index') }}">Home</a></li>
+                        <li><a href="{{ route('layanan') }}">Layanan</a></li>
+                        <li><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
+                        <li><a href="{{ route('tenaga-kesehatan') }}">Tenaga Kesehatan</a></li>
+                        <li><a href="{{ route('tentang-kami') }}">Tentang Kami</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
