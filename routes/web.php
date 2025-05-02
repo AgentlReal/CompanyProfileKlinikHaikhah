@@ -14,3 +14,4 @@ Route::get('/tentang-kami', [TentangKamiController::class, 'index'])->name('tent
 Route::get('/tenaga-kesehatan', [TenagaKesehatanController::class, 'index'])->name('tenaga-kesehatan');
 Route::get('/layanan', [LayananController::class, 'index'])->name('layanan');
 Route::get('/janji-temu', [JanjiTemuController::class, 'index'])->name('janji-temu');
+Route::post('/janji-temu', [JanjiTemuController::class, 'store'])->name('janji-temu.store');

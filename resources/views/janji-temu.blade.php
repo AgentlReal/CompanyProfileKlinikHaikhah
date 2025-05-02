@@ -81,71 +81,71 @@
                 </div>
 
                 <div class="appointment-form">
-                    <form id="appointmentForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Nama Lengkap</label>
-                                <input type="text" id="name" name="name" required />
-                            </div>
+                <form id="appointmentForm" method="POST" action="{{ route('janji.temu.store') }}">
+    @csrf
+    <div class="form-row">
+        <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="nama_lengkap" required />
+        </div>
 
-                            <div class="form-group">
-                                <label for="phone">Nomor Telepon</label>
-                                <input type="tel" id="phone" name="phone" required />
-                            </div>
-                        </div>
+        <div class="form-group">
+            <label for="phone">Nomor Telepon</label>
+            <input type="tel" id="phone" name="nomor_telepon" required />
+        </div>
+    </div>
 
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required />
-                        </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+    </div>
 
-                        <div class="form-group">
-                            <label for="service">Layanan</label>
-                            <select id="service" name="service" required>
-                                <option value="">Pilih Layanan</option>
-                                <option value="Konsultasi Umum">Konsultasi Umum</option>
-                                <option value="Konsultasi Spesialis">
-                                    Konsultasi Spesialis
-                                </option>
-                                <option value="Perawatan Gigi">Perawatan Gigi</option>
-                                <option value="Kesehatan Anak">Kesehatan Anak</option>
-                                <option value="Medical Check-up">Medical Check-up</option>
-                            </select>
-                        </div>
+    <div class="form-group">
+        <label for="service">Layanan</label>
+        <select id="service" name="layanan" required>
+            <option value="">Pilih Layanan</option>
+            <option value="Konsultasi Umum">Konsultasi Umum</option>
+            <option value="Konsultasi Spesialis">Konsultasi Spesialis</option>
+            <option value="Perawatan Gigi">Perawatan Gigi</option>
+            <option value="Kesehatan Anak">Kesehatan Anak</option>
+            <option value="Medical Check-up">Medical Check-up</option>
+        </select>
+    </div>
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="date">Tanggal</label>
-                                <input type="date" id="date" name="date" required />
-                            </div>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="date">Tanggal</label>
+            <input type="date" id="date" name="tanggal" required />
+        </div>
 
-                            <div class="form-group">
-                                <label for="time">Waktu</label>
-                                <select id="time" name="time" required>
-                                    <option value="">Pilih Waktu</option>
-                                    <option value="09:00">09:00</option>
-                                    <option value="10:00">10:00</option>
-                                    <option value="11:00">11:00</option>
-                                    <option value="13:00">13:00</option>
-                                    <option value="14:00">14:00</option>
-                                    <option value="15:00">15:00</option>
-                                    <option value="16:00">16:00</option>
-                                </select>
-                            </div>
-                        </div>
+        <div class="form-group">
+            <label for="time">Waktu</label>
+            <select id="time" name="waktu" required>
+                <option value="">Pilih Waktu</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+            </select>
+        </div>
+    </div>
 
-                        <div class="form-group">
-                            <label for="symptoms">Keluhan/Gejala</label>
-                            <textarea id="symptoms" name="symptoms" required></textarea>
-                        </div>
+    <div class="form-group">
+        <label for="symptoms">Keluhan/Gejala</label>
+        <textarea id="symptoms" name="Keluhan_Gejala"></textarea>
+    </div>
 
-                        <div class="form-group">
-                            <label for="notes">Catatan Tambahan (Opsional)</label>
-                            <textarea id="notes" name="notes"></textarea>
-                        </div>
+    <div class="form-group">
+        <label for="notes">Catatan Tambahan (Opsional)</label>
+        <textarea id="notes" name="catatan_tambahan"></textarea>
+    </div>
 
-                        <button type="submit" class="submit-btn">Kirim</button>
-                    </form>
+    <button type="submit" class="submit-btn">Kirim</button>
+</form>
+
                 </div>
             </div>
         </div>
