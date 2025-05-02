@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/logo-klinik.png" type="image/png" />
     <title>Klinik Haikhah</title>
-    <link rel="stylesheet" href="modules/fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="{{ asset('modules/fontawesome-free-6.7.2-web/css/all.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/global.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/tentang-kami.css') }}" />
 </head>
@@ -32,7 +32,7 @@
                 <div class="nav-right">
                     <a href="{{ route('janji-temu') }}" class="btn">
                         <p class="btn-p">Buat Janji Temu</p>
-                        <i class="fa-brands fa-whatsapp btn-icon"></i>
+                        <i class="fa-solid fa-pen-to-square btn-icon"></i>
                     </a>
                     <button class="nav-icon nav-icon-bars">
                         <i class="fa-solid fa-bars"></i>
@@ -121,14 +121,14 @@
         </div>
     </section>
 
- <!-- Achievements Section -->
-<section class="section achievements" id="achievements">
-    <div class="container">
-        <div class="section-title">
-            <h2>Pencapaian Kami</h2>
-        </div>
-        <div class="achievements-grid">
-            @foreach ($pencapaian as $item)
+    <!-- Achievements Section -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pencapaian Kami</h2>
+            </div>
+            <div class="achievements-grid">
+                @foreach ($pencapaian as $item)
                 <div class="achievement-card aos aos-bottom">
                     <div class="achievement-icon">
                         <i class="{{ $item->icon }}"></i>
@@ -136,20 +136,20 @@
                     <h3>{{ $item->value }}{{ $item->unit }}</h3>
                     <p>{{ $item->tipe }}</p>
                 </div>
-            @endforeach
+                @endforeach
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<!-- Timeline Section -->
-<section class="timeline-section" id="timeline">
-    <div class="container">
-        <div class="section-title">
-            <h2>Perjalanan Kami</h2>
-        </div>
-        <div class="timeline">
-            @foreach ($perjalanan as $item)
+    <!-- Timeline Section -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <div class="section-title">
+                <h2>Perjalanan Kami</h2>
+            </div>
+            <div class="timeline">
+                @foreach ($perjalanan as $item)
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content aos aos-bottom">
@@ -158,39 +158,39 @@
                         <p>{{ $item->deskripsi }}</p>
                     </div>
                 </div>
-            @endforeach
+                @endforeach
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-   <!-- Team Section -->
-<section class="team-section" id="leadership">
-    <div class="container">
-        <div class="section-title">
-            <h2>Tim Manajemen</h2>
-        </div>
-        <div class="management-team">
-            @foreach($timmanajemen as $anggota)
-            <div class="team-member aos aos-bottom">
-                <div class="member-image">
-                    <img src="{{ asset('path-ke-foto-default.jpg') }}" alt="{{ $anggota->nama }}" />
-                </div>
-                <div class="member-info">
-                    <h3>{{ $anggota->nama }}</h3>
-                    <span>{{ $anggota->spesialis }}</span>
-                    <p>{{ $anggota->deskripsi }}</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <!-- Team Section -->
+    <section class="team-section" id="leadership">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tim Manajemen</h2>
+            </div>
+            <div class="management-team">
+                @foreach($timmanajemen as $anggota)
+                <div class="team-member aos aos-bottom">
+                    <div class="member-image">
+                        <img src="{{ asset('path-ke-foto-default.jpg') }}" alt="{{ $anggota->nama }}" />
+                    </div>
+                    <div class="member-info">
+                        <h3>{{ $anggota->nama }}</h3>
+                        <span>{{ $anggota->spesialis }}</span>
+                        <p>{{ $anggota->deskripsi }}</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
                     </div>
                 </div>
+                @endforeach
             </div>
-            @endforeach
         </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- Footer -->
@@ -253,25 +253,6 @@
                             <i class="fas fa-clock"></i>
                             <p>Buka 24 Jam</p>
                         </div>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Newsletter</h3>
-                    <p>
-                        Berlangganan newsletter kami untuk mendapatkan tips kesehatan dan
-                        informasi terbaru.
-                    </p>
-                    <form class="subscribe-form">
-                        <input type="email" placeholder="Masukkan email Anda" />
-                        <button type="submit">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                    <div class="social-links" style="margin-top: 20px">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>

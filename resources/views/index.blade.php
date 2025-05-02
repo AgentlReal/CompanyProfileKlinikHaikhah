@@ -32,7 +32,7 @@
         <div class="nav-right">
           <a href="{{ route('janji-temu') }}" class="btn">
             <p class="btn-p">Buat Janji Temu</p>
-            <i class="fa-brands fa-whatsapp btn-icon"></i>
+            <i class="fa-solid fa-pen-to-square btn-icon"></i>
           </a>
           <button class="nav-icon nav-icon-bars">
             <i class="fa-solid fa-bars"></i>
@@ -56,7 +56,7 @@
           </p>
           <a href="#appointment" class="btn">
             <p class="btn-p">Buat Janji Temu</p>
-            <i class="fa-brands fa-whatsapp btn-icon"></i>
+            <i class="fa-solid fa-pen-to-square btn-icon"></i>
           </a>
         </div>
         <div class="hero-image aos aos-bottom">
@@ -203,7 +203,7 @@
         <div class="cta-buttons">
           <a href="#" class="btn-jt">
             <p class="btn-p">Buat Janji Temu</p>
-            <i class="fa-brands fa-whatsapp btn-icon"></i>
+            <i class="fa-solid fa-pen-to-square btn-icon"></i>
           </a>
           <a href="{{ route('fasilitas') }}" class="btn-white">Lihat Fasilitas Kami</a>
         </div>
@@ -240,12 +240,6 @@
             <li>
               <img src="{{ asset('images/partnership-1.png') }}" alt="" />
             </li>
-            <li>
-              <img src="{{ asset('images/partnership-2.png') }}" alt="" />
-            </li>
-            <li>
-              <img src="{{ asset('images/partnership-3.png') }}" alt="" />
-            </li>
           </ul>
         </div>
         <div class="footer-col">
@@ -271,24 +265,6 @@
               </p>
             </div>
             @endforeach
-          </div>
-        </div>
-        <div class="footer-col">
-          <h3>Newsletter</h3>
-          <p>
-            Subscribe to our newsletter for health tips and clinic updates.
-          </p>
-          <form class="subscribe-form">
-            <input type="email" placeholder="Enter your email" />
-            <button type="submit">
-              <i class="fas fa-paper-plane"></i>
-            </button>
-          </form>
-          <div class="social-links" style="margin-top: 20px">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>

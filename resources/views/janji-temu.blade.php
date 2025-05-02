@@ -8,7 +8,7 @@
     <link rel="icon" href="images/logo-klinik.png" type="image/png" />
     <link rel="stylesheet" href="{{ asset('css/global.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/janji-temu.css') }}" />
-    <link rel="stylesheet" href="modules/fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="{{ asset('modules/fontawesome-free-6.7.2-web/css/all.min.css') }}" />
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                 <div class="nav-right">
                     <a href="#" class="btn active">
                         <p class="btn-p">Buat Janji Temu</p>
-                        <i class="fa-brands fa-whatsapp btn-icon"></i>
+                        <i class="fa-solid fa-pen-to-square btn-icon"></i>
                     </a>
                     <button class="nav-icon nav-icon-bars">
                         <i class="fa-solid fa-bars"></i>
@@ -203,22 +203,6 @@
                             <i class="fas fa-clock"></i>
                             <p>Buka 24 Jam</p>
                         </div>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Newsletter</h3>
-                    <p>
-                        Subscribe to our newsletter for health tips and clinic updates.
-                    </p>
-                    <form class="subscribe-form">
-                        <input type="email" placeholder="Enter your email" />
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                    <div class="social-links" style="margin-top: 20px">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
