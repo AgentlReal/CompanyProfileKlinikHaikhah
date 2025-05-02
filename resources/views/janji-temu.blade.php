@@ -81,7 +81,7 @@
                 </div>
 
                 <div class="appointment-form">
-                <form id="appointmentForm" method="POST" action="{{ route('janji.temu.store') }}">
+                <form id="appointmentForm" method="POST" action="{{ route('janji-temu') }}">
     @csrf
     <div class="form-row">
         <div class="form-group">
