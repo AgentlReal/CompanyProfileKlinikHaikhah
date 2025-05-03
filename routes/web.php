@@ -20,4 +20,7 @@ Route::post('/janji-temu', [JanjiTemuController::class, 'store'])->name('janji-t
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 Route::post('/admin', [AdminController::class, 'login'])->name('admin.submit');
 Route::get('/manage-janji-temu', [ManageJanjiTemuController::class, 'index'])->name('manage-janji-temu');
+Route::get('/manage-janji-temu/{id}/edit', [ManageJanjiTemuController::class, 'edit'])->name('manage-janji-temu.edit');
+Route::put('/manage-janji-temu/{id}', [ManageJanjiTemuController::class, 'update'])->name('manage-janji-temu.update');
+Route::delete('/manage-janji-temu/{id}', [ManageJanjiTemuController::class, 'destroy'])->name('manage-janji-temu.destroy');
 Route::post('/manage-janji-temu', [AdminController::class, 'logout'])->name('admin.logout');

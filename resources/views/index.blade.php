@@ -134,7 +134,9 @@
             <i class="fas fa-star"></i>
           </div>
           <p class="testimonial-text">
-            "Waktu anak saya demam tinggi malem Minggu, saya panik karena klinik lain tutup. Alhamdulillah Klinik Haikhah buka 24 jam! Dokternya langsung tanggap dan anak saya cepat ditangani. Terima kasih tim!"
+            "Waktu anak saya demam tinggi malem Minggu, saya panik karena klinik lain tutup. Alhamdulillah
+            Klinik Haikhah buka 24 jam! Dokternya langsung tanggap dan anak saya cepat ditangani. Terima
+            kasih tim!"
           </p>
           <div class="client-info">
             <div class="client-image">
