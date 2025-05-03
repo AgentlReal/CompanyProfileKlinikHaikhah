@@ -16,14 +16,14 @@
     <header class="admin-header">
         <div class="header-content">
             <div class="header-left">
-                <img
-                    src="../images/logo-klinik.png"
-                    alt="Klinik Haikhah Logo"
-                    class="admin-logo" />
+                <img src="../images/logo-klinik.png" alt="Klinik Haikhah Logo" class="admin-logo" />
                 <h1>Admin Dashboard</h1>
             </div>
             <div class="header-right">
                 <span class="admin-name">Admin</span>
+                <form id="logoutForm" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
                 <button id="logoutBtn" class="logout-btn">
                     <i class="fas fa-sign-out-alt"></i>
                     Logout
@@ -38,10 +38,7 @@
             <h2>Manage Appointments</h2>
             <div class="header-actions">
                 <div class="search-box">
-                    <input
-                        type="text"
-                        id="searchInput"
-                        placeholder="Search appointments..." />
+                    <input type="text" id="searchInput" placeholder="Search appointments..." />
                     <i class="fas fa-search"></i>
                 </div>
                 <select id="statusFilter" class="status-filter">
