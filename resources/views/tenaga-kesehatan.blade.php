@@ -26,7 +26,7 @@
                     <li><a href="{{ route('index') }}">Home</a></li>
                     <li><a href="{{ route('layanan') }}">Layanan</a></li>
                     <li><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
-                    <li><a href="{{ route('tenaga-kesehatan') }}">Tenaga Kesehatan</a></li>
+                    <li><a href="#">Tenaga Kesehatan</a></li>
                     <li><a href="{{ route('tentang-kami') }}">Tentang Kami</a></li>
                 </ul>
                 <div class="nav-right">
@@ -43,338 +43,108 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="team-hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text aos aos-left">
-                    <h1>Tim Medis Profesional dan Berdedikasi</h1>
-                    <p>
-                        Klinik Pratama Haikhah didukung oleh tim tenaga kesehatan yang
-                        berpengalaman, profesional, dan memiliki dedikasi tinggi untuk
-                        memberikan layanan terbaik bagi setiap pasien kami.
-                    </p>
-                </div>
-                <div class="hero-image aos aos-bottom">
-                    <img src="/api/placeholder/600/400" alt="Tim Medis Klinik Haikhah" />
+                <h1>Tenaga Kesehatan Kami</h1>
+                <p>
+                    Dipimpin oleh tenaga kesehatan berpengalaman yang berkomitmen
+                    memberikan pelayanan terbaik untuk kesehatan Anda
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Stats -->
+    <section class="team-stats">
+        <div class="container">
+            <div class="stats-content">
+                <h2>Komposisi Tim Medis</h2>
+                <p>
+                    Klinik Pratama Haikhah didukung oleh tim medis profesional yang
+                    terdiri dari:
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <i class="fas fa-user-md"></i>
+                        <h3>Dokter Umum</h3>
+                        <p>2 orang</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-tooth"></i>
+                        <h3>Dokter Gigi</h3>
+                        <p>1 orang</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-pills"></i>
+                        <h3>Apoteker</h3>
+                        <p>1 orang</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-user-nurse"></i>
+                        <h3>Bidan</h3>
+                        <p>4 orang</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-teeth"></i>
+                        <h3>Perawat Gigi</h3>
+                        <p>1 orang</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-laptop-medical"></i>
+                        <h3>Adminkes</h3>
+                        <p>1 orang</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Filter Section -->
-    <section class="filter-section">
+    <!-- Team Members -->
+    <section class="team-members">
         <div class="container">
-            <div class="filter-container">
-                <h3>Filter Tenaga Kesehatan</h3>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">Semua</button>
-                    <button class="filter-btn" data-filter="doctor">Dokter</button>
-                    <button class="filter-btn" data-filter="nurse">Perawat</button>
-                    <button class="filter-btn" data-filter="midwife">Bidan</button>
-                    <button class="filter-btn" data-filter="pharmacist">Apoteker</button>
-                </div>
+            <div class="section-title">
+                <h2>Kenali Tim Kami</h2>
+                <p>Berkomitmen memberikan pelayanan kesehatan terbaik untuk Anda</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Team Grid Section -->
-    <section class="team-grid-section">
-        <div class="container">
-            <div class="team-grid" id="team-grid">
-                <!-- Dokter -->
-                <div class="team-card doctor aos aos-bottom">
-                    <div class="card-flip">
-                        <div class="card-front">
-                            <div class="member-image">
-                                <img src="/api/placeholder/400/400" alt="Dr. Anita Wijaya" />
-                            </div>
-                            <div class="member-tag">Dokter</div>
-                            <div class="member-info">
-                                <h3>Dr. Anita Wijaya</h3>
-                                <span>Dokter Umum</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Dr. Anita Wijaya</h3>
-                            <span>Dokter Umum</span>
-                            <p>
-                                Berpengalaman lebih dari 12 tahun dalam praktik kedokteran
-                                umum dengan spesialisasi dalam perawatan kesehatan keluarga.
-                            </p>
-                            <div class="qualification">
-                                <i class="fas fa-graduation-cap"></i>
-                                <p>Universitas Indonesia</p>
-                            </div>
-                            <div class="schedule">
-                                <i class="fas fa-calendar-day"></i>
-                                <p>Senin - Jumat: 08.00 - 16.00</p>
-                            </div>
-                            <div class="contact-btn">
-                                <a href="#" class="contact-link">Konsultasi <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                            <div class="social-links">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            </div>
-                        </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="{{ asset('images/tenaga-kesehatan.jpg') }}" alt="Tenkes" />
                     </div>
-                </div>
-
-                <div class="team-card doctor aos aos-bottom">
-                    <div class="card-flip">
-                        <div class="card-front">
-                            <div class="member-image">
-                                <img src="/api/placeholder/400/400" alt="Dr. Budi Santoso" />
-                            </div>
-                            <div class="member-tag">Dokter</div>
-                            <div class="member-info">
-                                <h3>Dr. Budi Santoso</h3>
-                                <span>Dokter Spesialis Anak</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Dr. Budi Santoso</h3>
-                            <span>Dokter Spesialis Anak</span>
-                            <p>
-                                Spesialis anak berpengalaman dengan fokus pada tumbuh kembang
-                                anak dan penanganan penyakit anak dengan pendekatan ramah.
-                            </p>
-                            <div class="qualification">
-                                <i class="fas fa-graduation-cap"></i>
-                                <p>Universitas Airlangga</p>
-                            </div>
-                            <div class="schedule">
-                                <i class="fas fa-calendar-day"></i>
-                                <p>Selasa & Kamis: 09.00 - 14.00</p>
-                            </div>
-                            <div class="contact-btn">
-                                <a href="#" class="contact-link">Konsultasi <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                            <div class="social-links">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-card doctor aos aos-bottom">
-                    <div class="card-flip">
-                        <div class="card-front">
-                            <div class="member-image">
-                                <img src="/api/placeholder/400/400" alt="Dr. Citra Pertiwi" />
-                            </div>
-                            <div class="member-tag">Dokter</div>
-                            <div class="member-info">
-                                <h3>Dr. Citra Pertiwi</h3>
-                                <span>Dokter Gigi</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Dr. Citra Pertiwi</h3>
-                            <span>Dokter Gigi</span>
-                            <p>
-                                Dokter gigi dengan keahlian dalam perawatan konservatif dan
-                                estetika gigi dengan pendekatan yang lembut dan minim rasa
-                                sakit.
-                            </p>
-                            <div class="qualification">
-                                <i class="fas fa-graduation-cap"></i>
-                                <p>Universitas Padjadjaran</p>
-                            </div>
-                            <div class="schedule">
-                                <i class="fas fa-calendar-day"></i>
-                                <p>Senin, Rabu, Jumat: 10.00 - 17.00</p>
-                            </div>
-                            <div class="contact-btn">
-                                <a href="#" class="contact-link">Konsultasi <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                            <div class="social-links">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Perawat -->
-                <div class="team-card nurse aos aos-bottom">
-                    <div class="card-flip">
-                        <div class="card-front">
-                            <div class="member-image">
-                                <img src="/api/placeholder/400/400" alt="Dewi Ariska" />
-                            </div>
-                            <div class="member-tag">Perawat</div>
-                            <div class="member-info">
-                                <h3>Dewi Ariska</h3>
-                                <span>Kepala Perawat</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Dewi Ariska</h3>
-                            <span>Kepala Perawat</span>
-                            <p>
-                                Perawat senior dengan lebih dari 15 tahun pengalaman dalam
-                                manajemen keperawatan dan perawatan pasien intensif.
-                            </p>
-                            <div class="qualification">
-                                <i class="fas fa-graduation-cap"></i>
-                                <p>Poltekkes Kemenkes Pontianak</p>
-                            </div>
-                            <div class="schedule">
-                                <i class="fas fa-calendar-day"></i>
-                                <p>Senin - Jumat: 07.00 - 15.00</p>
-                            </div>
-                            <div class="social-links">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-card nurse aos aos-bottom">
-                    <div class="card-flip">
-                        <div class="card-front">
-                            <div class="member-image">
-                                <img src="/api/placeholder/400/400" alt="Eko Prasetyo" />
-                            </div>
-                            <div class="member-tag">Perawat</div>
-                            <div class="member-info">
-                                <h3>Eko Prasetyo</h3>
-                                <span>Perawat UGD</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Eko Prasetyo</h3>
-                            <span>Perawat UGD</span>
-                            <p>
-                                Spesialis perawatan gawat darurat dengan sertifikasi BCLS dan
-                                ACLS. Ahli dalam penanganan pasien kritis dan trauma.
-                            </p>
-                            <div class="qualification">
-                                <i class="fas fa-graduation-cap"></i>
-                                <p>Universitas Tanjungpura</p>
-                            </div>
-                            <div class="schedule">
-                                <i class="fas fa-calendar-day"></i>
-                                <p>Shift Bergilir 24 Jam</p>
-                            </div>
-                            <div class="social-links">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bidan -->
-                <div class="team-card midwife aos aos-bottom">
-                    <div class="card-flip">
-                        <div class="card-front">
-                            <div class="member-image">
-                                <img src="/api/placeholder/400/400" alt="Fani Nurhaliza" />
-                            </div>
-                            <div class="member-tag">Bidan</div>
-                            <div class="member-info">
-                                <h3>Fani Nurhaliza</h3>
-                                <span>Bidan Koordinator</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Fani Nurhaliza</h3>
-                            <span>Bidan Koordinator</span>
-                            <p>
-                                Bidan berpengalaman dalam perawatan kehamilan, persalinan
-                                normal, dan edukasi kesehatan reproduksi wanita.
-                            </p>
-                            <div class="qualification">
-                                <i class="fas fa-graduation-cap"></i>
-                                <p>Poltekkes Kemenkes Pontianak</p>
-                            </div>
-                            <div class="schedule">
-                                <i class="fas fa-calendar-day"></i>
-                                <p>Senin - Sabtu: 08.00 - 16.00</p>
-                            </div>
-                            <div class="contact-btn">
-                                <a href="#" class="contact-link">Konsultasi <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                            <div class="social-links">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Apoteker -->
-                <div class="team-card pharmacist aos aos-bottom">
-                    <div class="card-flip">
-                        <div class="card-front">
-                            <div class="member-image">
-                                <img src="/api/placeholder/400/400" alt="Gunawan Wibowo" />
-                            </div>
-                            <div class="member-tag">Apoteker</div>
-                            <div class="member-info">
-                                <h3>Gunawan Wibowo</h3>
-                                <span>Apoteker Kepala</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Gunawan Wibowo</h3>
-                            <span>Apoteker Kepala</span>
-                            <p>
-                                Apoteker berpengalaman dalam pengelolaan farmasi klinik,
-                                farmakologi, dan konsultasi penggunaan obat yang aman.
-                            </p>
-                            <div class="qualification">
-                                <i class="fas fa-graduation-cap"></i>
-                                <p>Institut Teknologi Bandung</p>
-                            </div>
-                            <div class="schedule">
-                                <i class="fas fa-calendar-day"></i>
-                                <p>Senin - Jumat: 08.00 - 17.00</p>
-                            </div>
-                            <div class="social-links">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-card pharmacist aos aos-bottom">
-                    <div class="card-flip">
-                        <div class="card-front">
-                            <div class="member-image">
-                                <img src="/api/placeholder/400/400" alt="Hana Permata" />
-                            </div>
-                            <div class="member-tag">Apoteker</div>
-                            <div class="member-info">
-                                <h3>Hana Permata</h3>
-                                <span>Asisten Apoteker</span>
-                            </div>
-                        </div>
-                        <div class="card-back">
-                            <h3>Hana Permata</h3>
-                            <span>Asisten Apoteker</span>
-                            <p>
-                                Asisten apoteker yang teliti dan terampil dalam pengelolaan
-                                inventaris obat dan penyiapan obat untuk pasien.
-                            </p>
-                            <div class="qualification">
-                                <i class="fas fa-graduation-cap"></i>
-                                <p>Akademi Farmasi Pontianak</p>
-                            </div>
-                            <div class="schedule">
-                                <i class="fas fa-calendar-day"></i>
-                                <p>Senin - Jumat: 08.00 - 17.00</p>
-                            </div>
-                            <div class="social-links">
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            </div>
-                        </div>
+                    <div class="member-info">
+                        <p>
+                            Klinik Pratama Haikhah didukung oleh tenaga kesehatan
+                            profesional yang siap memberikan pelayanan terbaik kepada
+                            masyarakat. Terdapat dua orang dokter umum yang bertugas
+                            memberikan layanan kesehatan dasar, diagnosis awal, serta
+                            penanganan berbagai keluhan medis secara menyeluruh. Dengan
+                            kehadiran dua dokter, pelayanan dapat diberikan secara lebih
+                            optimal, cepat, dan efisien. Selain itu, tersedia satu orang
+                            dokter gigi yang menangani pemeriksaan, perawatan, serta
+                            tindakan medis terkait kesehatan gigi dan mulut. Dokter gigi
+                            bekerja sama dengan satu orang perawat gigi untuk memastikan
+                            tindakan dilakukan dengan aman dan sesuai standar pelayanan
+                            kesehatan gigi. Untuk kebutuhan farmasi, klinik juga memiliki
+                            satu orang apoteker yang bertanggung jawab atas pengelolaan
+                            obat, pemberian informasi obat kepada pasien, serta memastikan
+                            obat-obatan yang diberikan sesuai dengan resep dokter dan aman
+                            digunakan. Dalam pelayanan kebidanan, Klinik Pratama Haikhah
+                            diperkuat oleh empat orang bidan yang memiliki peran penting
+                            dalam memberikan layanan kesehatan ibu dan anak, mulai dari
+                            pemeriksaan kehamilan, persalinan, hingga edukasi pasca
+                            persalinan. Keberadaan bidan yang cukup memungkinkan pelayanan
+                            dilakukan secara bergantian dan menyeluruh. Keseluruhan kegiatan
+                            administrasi medis di klinik ini dikelola oleh satu orang
+                            adminkes (administrasi kesehatan) yang bertugas mencatat data
+                            pasien, mengatur jadwal pelayanan, dan memastikan seluruh proses
+                            administratif berjalan dengan tertib dan sistematis. Dengan
+                            formasi tenaga kesehatan yang lengkap dan kompeten, Klinik
+                            Pratama Haikhah berkomitmen untuk menjadi fasilitas kesehatan
+                            yang terpercaya dan mampu memenuhi kebutuhan layanan medis
+                            masyarakat secara profesional.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -450,8 +220,7 @@
         </div>
     </footer>
 
-    <script src="js/global.js"></script>
-    <script src="js/tenaga-kesehatan.js"></script>
+    <script src="{{ asset('js/global.js') }}"></script>
 </body>
 
 </html>

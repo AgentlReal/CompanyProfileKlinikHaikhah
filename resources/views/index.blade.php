@@ -118,37 +118,6 @@
     </div>
   </section>
 
-  <!-- Team Section -->
-  <section class="team" id="team">
-    <div class="container">
-      <div class="section-title">
-        <h2>Meet Our Experts</h2>
-      </div>
-      <div class="team-grid aos aos-bottom">
-
-        @foreach ($dokter as $item)
-        <div class="team-member">
-          <div class="member-image">
-            <img src="{{ asset('images/' . $item->gambar) }}" alt="{{ $item->nama }}" />
-          </div>
-          <div class="member-info">
-            <h3>{{ $item->nama }}</h3>
-            <span>{{ $item->spesialis }}</span>
-            <p>{{ $item->deskripsi }}</p>
-            <div class="social-links">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-          </div>
-        </div>
-        @endforeach
-
-      </div>
-    </div>
-  </section>
-
-
   <!-- Testimonials Section -->
   <section class="testimonials" id="testimonials">
     <div class="container">
@@ -165,19 +134,15 @@
             <i class="fas fa-star"></i>
           </div>
           <p class="testimonial-text">
-            "The care I received at MediCare Clinic was exceptional. Dr.
-            Johnson was thorough, compassionate, and took the time to explain
-            everything clearly. The entire staff made me feel comfortable and
-            valued. I highly recommend this clinic to anyone looking for
-            quality healthcare."
+            "Waktu anak saya demam tinggi malem Minggu, saya panik karena klinik lain tutup. Alhamdulillah Klinik Haikhah buka 24 jam! Dokternya langsung tanggap dan anak saya cepat ditangani. Terima kasih tim!"
           </p>
           <div class="client-info">
             <div class="client-image">
-              <img src="/api/placeholder/100/100" alt="Robert Wilson" />
+              <img src="/api/placeholder/100/100" alt="Putri" />
             </div>
             <div class="client-name">
-              <h4>Robert Wilson</h4>
-              <span>Patient for 3 years</span>
+              <h4>Putri</h4>
+              <span>Orang Tua Pasien</span>
             </div>
           </div>
         </div>
