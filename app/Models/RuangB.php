@@ -8,7 +8,7 @@ class RuangB extends Model
 {
     protected $table = 'ruang_b';
     protected $primaryKey = 'ruang_id';
-    protected $fillable = ['nama', 'deskripsi'];
+    protected $fillable = ['nama', 'deskripsi', 'gambar'];
     public $timestamps = false;
 
     public function fiturs()

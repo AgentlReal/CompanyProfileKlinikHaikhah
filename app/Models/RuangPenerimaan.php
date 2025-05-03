@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class RuangPenerimaan extends Model
 {
     protected $table = 'ruang_penerimaan';
-    protected $fillable = ['nama', 'deskripsi'];
+    protected $fillable = ['nama', 'deskripsi','gambar'];
 
 
     public function fiturs()
