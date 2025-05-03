@@ -82,7 +82,7 @@
         @foreach ($ruangpenerimaan as $ruang)
         <div class="facility-card">
           <div class="facility-image">
-            <img src="/api/placeholder/500/300" alt="{{ $ruang->nama }}" />
+            <img src="{{ asset($ruang->gambar) }}" alt="{{ $ruang->nama }}" />
           </div>
           <div class="facility-content">
             <h3>{{ $ruang->nama }}</h3>
@@ -120,7 +120,7 @@
         <div class="facility-card">
           <div class="facility-image">
             {{-- Kalau nanti ada gambar, tinggal load di sini --}}
-            <img src="{{ $ruang->gambar ?? '' }}" alt="{{ $ruang->nama }}">
+            <img src="{{ asset($ruang->gambar) }}" alt="{{ $ruang->nama }}" />
           </div>
           <div class="facility-content">
             <h3>{{ $ruang->nama }}</h3>
@@ -154,7 +154,7 @@
         <div class="facility-card">
           <div class="facility-image">
             <!-- Optional: ganti src dengan URL gambar dari DB kalau ada -->
-            <img src="{{ asset('images/default.jpg') }}" alt="{{ $area->nama }}">
+            <img src="{{ asset($area->gambar) }}" alt="{{ $area->nama }}" />
           </div>
           <div class="facility-content">
             <h3>{{ $area->nama }}</h3>
@@ -188,7 +188,7 @@
         <div class="facility-card">
           <div class="facility-image">
             <!-- Optional: ganti src dengan URL gambar dari DB kalau ada -->
-            <img src="{{ asset('images/default.jpg') }}" alt="{{ $area->nama }}">
+            <img src="{{ asset($area->gambar) }}" alt="{{ $area->nama }}" />
           </div>
           <div class="facility-content">
             <h3>{{ $area->nama }}</h3>

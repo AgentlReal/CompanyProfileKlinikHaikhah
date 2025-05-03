@@ -8,7 +8,7 @@ class AreaD extends Model
 {
     protected $table = 'area_d';
     protected $primaryKey = 'ruang_id';
-    protected $fillable = ['nama', 'deskripsi'];
+    protected $fillable = ['nama', 'deskripsi', 'gambar'];
     public $timestamps = false;
 
     public function fiturs()
