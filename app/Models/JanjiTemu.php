@@ -10,14 +10,14 @@ class JanjiTemu extends Model
     protected $primaryKey = 'id';
     public $timestamps = false;
     protected $fillable = [
-    'nama_lengkap',
-    'nomor_telepon',
-    'email',
-    'layanan',
-    'tanggal',
-    'waktu',
-    'Keluhan_Gejala',
-    'catatan_tamabahan'
-];
-
+        'nama_lengkap',
+        'nomor_telepon',
+        'email',
+        'layanan',
+        'tanggal',
+        'waktu',
+        'Keluhan_Gejala',
+        'catatan_tambahan',
+        'status'
+    ];
 }

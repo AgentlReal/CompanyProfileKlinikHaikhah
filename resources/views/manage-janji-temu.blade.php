@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Manage Appointments - Klinik Haikhah</title>
     <link rel="icon" href="../images/logo-klinik.png" type="image/png" />
     <link rel="stylesheet" href="{{ asset('modules/fontawesome-free-6.7.2-web/css/all.min.css') }}" />
@@ -63,9 +64,30 @@
                         <th>Aksi</th>
                     </tr>
                 </thead>
+                @foreach ($managejanjitemu as $jt)
                 <tbody id="appointmentsTableBody">
-                    <!-- Table content will be populated by JavaScript -->
+                    <td>{{ $jt->tanggal }} {{ $jt->waktu }}</td>
+                    <td>{{ $jt->nama_lengkap }}</td>
+                    <td>{{ $jt->layanan }}</td>
+                    <td>
+                        <div>{{ $jt->nomor_telepon }}</div>
+                        <div style="font-size: 12px; color: #666;">{{ $jt->email }}</div>
+                    </td>
+                    <td><span class="status-badge status-{{ $jt->status }}">{{ $jt->status }}</span></td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-edit" onclick="editAppointment('{{ $jt->id }}')">
+                                <i class="fas fa-edit"></i>
+                                Edit
+                            </button>
+                            <button class="btn-delete" onclick="deleteAppointment('{{ $jt->id }}')">
+                                <i class="fas fa-trash-alt"></i>
+                                Delete
+                            </button>
+                        </div>
+                    </td>
                 </tbody>
+                @endforeach
             </table>
         </div>
     </main>
@@ -77,7 +99,9 @@
                 <h3>Edit Appointment</h3>
                 <button class="close-modal">&times;</button>
             </div>
-            <form id="editForm">
+            <form id="editForm" method="POST">
+                @csrf
+                @method('PUT')
                 <div class="form-group">
                     <label for="editName">Patient Name</label>
                     <input type="text" id="editName" name="name" required />
@@ -139,7 +163,11 @@
                 <p>This action cannot be undone.</p>
             </div>
             <div class="modal-footer">
-                <button id="confirmDelete" class="btn-delete">Delete</button>
+                <form action="{{ route('manage-janji-temu.destroy', $jt->id) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button id="confirmDelete" class="btn-delete">Delete</button>
+                </form>
                 <button class="btn-cancel">Cancel</button>
             </div>
         </div>
