@@ -7,8 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class JanjiTemu extends Model
 {
     protected $table = 'janji_temu';
-
-protected $fillable = [
+    protected $primaryKey = 'id';
+    public $timestamps = false;
+    protected $fillable = [
     'nama_lengkap',
     'nomor_telepon',
     'email',
@@ -16,7 +17,7 @@ protected $fillable = [
     'tanggal',
     'waktu',
     'Keluhan_Gejala',
-    'catatan_tambahan'
+    'catatan_tamabahan'
 ];
 
 }

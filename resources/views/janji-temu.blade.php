@@ -81,13 +81,14 @@
                 </div>
 
                 <div class="appointment-form">
-                    <form id="appointmentForm" method="POST" action="{{ route('janji-temu.store') }}">
-                        @csrf
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Nama Lengkap</label>
-                                <input type="text" id="name" name="nama_lengkap" required />
-                            </div>
+
+                <form id="appointmentForm" method="POST" action="{{ route('janji-temu') }}">
+    @csrf
+    <div class="form-row">
+        <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="nama_lengkap" required />
+        </div>
 
                             <div class="form-group">
                                 <label for="phone">Nomor Telepon</label>
