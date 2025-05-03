@@ -1,9 +1,8 @@
+document.getElementById('logoutBtn').addEventListener('click', function () {
+    document.getElementById('logoutForm').submit();
+});
+
 document.addEventListener("DOMContentLoaded", function () {
-    // Check if user is logged in
-    //   if (!localStorage.getItem("adminUsername")) {
-    //     window.location.href = "login.html";
-    //     return;
-    //   }
 
     // Sample appointments data (in real app, this would come from a database)
     let appointments = [
@@ -160,12 +159,6 @@ document.addEventListener("DOMContentLoaded", function () {
             editModal.classList.remove("show");
             deleteModal.classList.remove("show");
         });
-    });
-
-    // Handle logout
-    logoutBtn.addEventListener("click", function () {
-        localStorage.removeItem("adminUsername");
-        window.location.href = "login.html";
     });
 
     // Initial render

@@ -15,13 +15,11 @@
     <div class="login-container">
         <div class="login-box">
             <div class="login-header">
-                <img
-                    src="../images/logo-klinik.png"
-                    alt="Klinik Haikhah Logo"
-                    class="login-logo" />
+                <img src="../images/logo-klinik.png" alt="Klinik Haikhah Logo" class="login-logo" />
                 <h1>Admin Login</h1>
             </div>
-            <form id="loginForm" class="login-form">
+            <form id="loginForm" class="login-form" method="POST" action="{{ route('admin.submit') }}">
+                @csrf
                 <div class="form-group">
                     <label for="username">
                         <i class="fas fa-user"></i>
