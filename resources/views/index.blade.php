@@ -66,27 +66,28 @@
     </div>
   </section>
 
-  <!-- Services Section -->
   <section class="services" id="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Bentuk Pelayanan</h2>
-      </div>
-      <div class="services-grid aos aos-bottom">
-        @foreach ($pelayanan as $pelayanans)
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-stethoscope"></i> <!-- Ini nanti bisa dibuat dinamis juga kalau mau -->
-          </div>
-          <h3>{{ $pelayanans->nama }}</h3>
-          <p>
-            {{ $pelayanans->deskripsi }}
-          </p>
-        </div>
-        @endforeach
-      </div>
+  <div class="container">
+    <div class="section-title">
+      <h2>Bentuk Pelayanan</h2>
     </div>
-  </section>
+    <div class="services-grid aos aos-bottom">
+      @foreach ($pelayanan as $pelayanans)
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="{{ $pelayanans->gambar }}" style="font-size: 40px; color: #2b7a78;"></i> 
+        </div>
+        <h3>{{ $pelayanans->nama }}</h3>
+        <p>
+          {{ $pelayanans->deskripsi }}
+        </p>
+      </div>
+      @endforeach
+    </div>
+  </div>
+</section>
+
+
 
 
   <!-- Why Us Section -->
