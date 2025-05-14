@@ -67,25 +67,25 @@
   </section>
 
   <section class="services" id="services">
-  <div class="container">
-    <div class="section-title">
-      <h2>Bentuk Pelayanan</h2>
-    </div>
-    <div class="services-grid aos aos-bottom">
-      @foreach ($pelayanan as $pelayanans)
-      <div class="service-card">
-        <div class="service-icon">
-          <i class="{{ $pelayanans->gambar }}" style="font-size: 40px; color: #2b7a78;"></i> 
-        </div>
-        <h3>{{ $pelayanans->nama }}</h3>
-        <p>
-          {{ $pelayanans->deskripsi }}
-        </p>
+    <div class="container">
+      <div class="section-title">
+        <h2>Bentuk Pelayanan</h2>
       </div>
-      @endforeach
+      <div class="services-grid aos aos-bottom">
+        @foreach ($pelayanan as $pelayanans)
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="{{ $pelayanans->gambar }}" style="font-size: 40px; color: #2b7a78;"></i>
+          </div>
+          <h3>{{ $pelayanans->nama }}</h3>
+          <p>
+            {{ $pelayanans->deskripsi }}
+          </p>
+        </div>
+        @endforeach
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -140,9 +140,6 @@
             kasih tim!"
           </p>
           <div class="client-info">
-            <div class="client-image">
-              <img src="/api/placeholder/100/100" alt="Putri" />
-            </div>
             <div class="client-name">
               <h4>Putri</h4>
               <span>Orang Tua Pasien</span>
