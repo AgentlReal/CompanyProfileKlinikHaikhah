@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="images/logo-klinik.png" type="image/png" />
-  <title>Klinik Haikhah</title>
+  <title>Fasilitas - Klinik Haikhah</title>
   <link rel="stylesheet" href="{{ asset('modules/fontawesome-free-6.7.2-web/css/all.min.css') }}" />
   <link rel="stylesheet" href="{{ asset('css/global.css') }}" />
   <link rel="stylesheet" href="{{ asset('css/fasilitas.css') }}" />
