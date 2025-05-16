@@ -162,37 +162,6 @@
             </div>
         </div>
     </section>
-
-
-    <!-- Team Section -->
-    <section class="team-section" id="leadership">
-        <div class="container">
-            <div class="section-title">
-                <h2>Tim Manajemen</h2>
-            </div>
-            <div class="management-team">
-                @foreach($timmanajemen as $anggota)
-                <div class="team-member aos aos-bottom">
-                    <div class="member-image">
-                        <img src="{{ asset('path-ke-foto-default.jpg') }}" alt="{{ $anggota->nama }}" />
-                    </div>
-                    <div class="member-info">
-                        <h3>{{ $anggota->nama }}</h3>
-                        <span>{{ $anggota->spesialis }}</span>
-                        <p>{{ $anggota->deskripsi }}</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-
     <!-- Footer -->
     <footer id="contact">
         <div class="container">

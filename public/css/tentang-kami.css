@@ -57,6 +57,7 @@
 .history-text {
     flex: 1;
     min-width: 300px;
+    text-align: justify;
 }
 
 .history-image {
