@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             rating: 5,
-            text: "Awalnya coba-coba ke Klinik Haikhah karena dekat rumah, tapi sekarang malah betah! Dokternya sabar banget jelasin keluhan saya, nggak buru-buru. Adminnya juga ramah, janjian gampang via WhatsApp. Ruangannya bersih dan nyaman. Recommended deh!",
+            text: "Awalnya coba-coba ke Klinik Haikhah karena dekat rumah, tapi sekarang malah betah! Dokternya sabar banget jelasin keluhan saya, nggak buru-buru. Ruangannya bersih dan nyaman. Recommended deh!",
             name: "Sinta",
             title: "Pasien",
         },
         {
             rating: 5,
-            text: "Setahun lalu saya sering sakit gigi parah sampai nggak bisa makan. Setelah konsul di Klinik Haikhah, dr. Maya kasih solusi yang jelas dan tindakannya nggak sakit banget (seriusan!). Sekarang gigi saya sehat, nggak takut ke dokter lagi!",
+            text: "Setahun lalu saya sering sakit gigi parah sampai nggak bisa makan. Setelah konsul di Klinik Haikhah, dr. Niha kasih solusi yang jelas dan tindakannya nggak sakit banget (seriusan!). Sekarang gigi saya sehat, nggak takut ke dokter lagi!",
             name: "Rudi",
             title: "Pasien",
         },
@@ -23,15 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const testimonialCard = document.querySelector(".testimonial-card");
     const buttons = document.querySelectorAll(".testimonial-btn");
-
+    let currentIndex = 0;
     buttons.forEach((button, index) => {
         button.addEventListener("click", () => {
             if (index < testimonials.length) {
-                updateTestimonial(index);
-                setActiveButton(index);
+                currentIndex = index;
+                updateTestimonial(currentIndex);
+                setActiveButton(currentIndex);
             }
         });
     });
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        updateTestimonial(currentIndex);
+        setActiveButton(currentIndex);
+    }, 3000);
 
     function updateTestimonial(index) {
         const testimonial = testimonials[index];
@@ -48,9 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <p class="testimonial-text">"${testimonial.text}"</p>
             <div class="client-info">
-                <div class="client-image">
-                    <img src="/api/placeholder/100/100" alt="${testimonial.name}">
-                </div>
                 <div class="client-name">
                     <h4>${testimonial.name}</h4>
                     <span>${testimonial.title}</span>
@@ -69,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    updateTestimonial(0);
+    updateTestimonial(currentIndex);
 });
 
 //Clear Service Card Entering Animation
