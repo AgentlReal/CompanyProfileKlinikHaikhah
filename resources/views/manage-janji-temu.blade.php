@@ -106,6 +106,24 @@
                     <label for="editName">Patient Name</label>
                     <input type="text" id="editName" name="name" required />
                 </div>
+                <div class="form-group">
+                    <label for="editPhone">Nomor Telepon</label>
+                    <input type="text" id="editPhone" name="phone" required />
+                </div>
+                <div class="form-group">
+                    <label for="editEmail">Email</label>
+                    <input type="email" id="editEmail" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="editService">Service</label>
+                    <select id="editService" name="service" required>
+                        <option value="Konsultasi Umum">Konsultasi Umum</option>
+                        <option value="Konsultasi Spesialis">Konsultasi Spesialis</option>
+                        <option value="Perawatan Gigi">Perawatan Gigi</option>
+                        <option value="Kesehatan Anak">Kesehatan Anak</option>
+                        <option value="Medical Check-up">Medical Check-up</option>
+                    </select>
+                </div>
                 <div class="form-row">
                     <div class="form-group">
                         <label for="editDate">Date</label>
@@ -124,16 +142,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="editService">Service</label>
-                    <select id="editService" name="service" required>
-                        <option value="Konsultasi Umum">Konsultasi Umum</option>
-                        <option value="Konsultasi Spesialis">Konsultasi Spesialis</option>
-                        <option value="Perawatan Gigi">Perawatan Gigi</option>
-                        <option value="Kesehatan Anak">Kesehatan Anak</option>
-                        <option value="Medical Check-up">Medical Check-up</option>
-                    </select>
-                </div>
+
                 <div class="form-group">
                     <label for="editStatus">Status</label>
                     <select id="editStatus" name="status" required>
