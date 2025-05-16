@@ -336,7 +336,7 @@
                         </div>
                     </div>
 
-                    <a href="#appointment" class="btn-service">Buat Janji Temu</a>
+                    <a href="{{ route('janji-temu') }}" class="btn-service">Buat Janji Temu</a>
                 </div>
             </div>
         </div>
@@ -380,7 +380,7 @@
                         </div>
                     </div>
 
-                    <a href="#appointment" class="btn-service">Buat Janji Temu</a>
+                    <a href="{{ route('janji-temu') }}" class="btn-service">Buat Janji Temu</a>
                 </div>
             </div>
         </div>
@@ -423,7 +423,7 @@
                         </div>
                     </div>
 
-                    <a href="#appointment" class="btn-service">Buat Janji Temu</a>
+                    <a href="{{ route('janji-temu') }}" class="btn-service">Buat Janji Temu</a>
                 </div>
             </div>
         </div>
