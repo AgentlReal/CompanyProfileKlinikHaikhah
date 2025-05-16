@@ -251,11 +251,6 @@
     font-size: 14px;
 }
 
-.timeline-item:nth-child(odd) .timeline-date {
-    right: auto;
-    left: 15px;
-}
-
 .timeline-marker {
     position: absolute;
     width: 20px;
