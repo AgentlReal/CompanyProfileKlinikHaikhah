@@ -22,10 +22,13 @@ class JanjiTemuController extends Controller
             'tanggal' => 'required|date',
             'waktu' => 'required',
             'Keluhan_Gejala' => 'nullable',
-            'catatan_tamabahan' => 'nullable'
+            'catatan_tamabahan' => 'nullable',
         ]);
 
-        JanjiTemu::create($request->all());
+        $data = $request->all();
+        $data['status'] = 'pending';
+
+        JanjiTemu::create($data);
 
         return redirect()->back()->with('success', 'Janji berhasil dibuat!');
     }
