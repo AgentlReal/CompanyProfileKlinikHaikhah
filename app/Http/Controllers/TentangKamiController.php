@@ -1,10 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\MisiNilai;
 use App\Models\Pencapaian;
 use App\Models\Perjalanan;
 use App\Models\TimManajemen;
+use App\Models\Kontak;
+
 class TentangKamiController extends Controller
 {
     public function index()
@@ -13,6 +16,7 @@ class TentangKamiController extends Controller
         $pencapaian = Pencapaian::all();
         $perjalanan = Perjalanan::orderBy('tahun')->get();
         $timmanajemen = TimManajemen::all();
-        return view('tentang-kami', compact('misinilai', 'pencapaian', 'perjalanan','timmanajemen'));
+        $kontak = Kontak::all();
+        return view('tentang-kami', compact('misinilai', 'pencapaian', 'perjalanan', 'timmanajemen', 'kontak'));
     }
 }

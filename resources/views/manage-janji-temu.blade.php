@@ -37,19 +37,6 @@
     <main class="admin-main">
         <div class="content-header">
             <h2>Manage Appointments</h2>
-            <div class="header-actions">
-                <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="Search appointments..." />
-                    <i class="fas fa-search"></i>
-                </div>
-                <select id="statusFilter" class="status-filter">
-                    <option value="all">All Status</option>
-                    <option value="pending">Pending</option>
-                    <option value="confirmed">Confirmed</option>
-                    <option value="completed">Completed</option>
-                    <option value="cancelled">Cancelled</option>
-                </select>
-            </div>
         </div>
 
         <div class="table-container">
@@ -172,12 +159,14 @@
                 <p>This action cannot be undone.</p>
             </div>
             <div class="modal-footer">
+                @foreach ($managejanjitemu as $jt)
                 <form action="{{ route('manage-janji-temu.destroy', $jt->id) }}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button id="confirmDelete" class="btn-delete">Delete</button>
                 </form>
                 <button class="btn-cancel">Cancel</button>
+                @endforeach
             </div>
         </div>
     </div>

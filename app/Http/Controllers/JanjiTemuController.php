@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kontak;
 use App\Models\JanjiTemu;
 use Illuminate\Http\Request;
 
@@ -9,7 +10,8 @@ class JanjiTemuController extends Controller
 {
     public function index()
     {
-        return view('janji-temu');
+        $kontak = Kontak::all();
+        return view('janji-temu', compact('kontak'));
     }
 
     public function store(Request $request)

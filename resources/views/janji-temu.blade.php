@@ -82,13 +82,13 @@
 
                 <div class="appointment-form">
 
-                <form id="appointmentForm" method="POST" action="{{ route('janji-temu') }}">
-    @csrf
-    <div class="form-row">
-        <div class="form-group">
-            <label for="name">Nama Lengkap</label>
-            <input type="text" id="name" name="nama_lengkap" required />
-        </div>
+                    <form id="appointmentForm" method="POST" action="{{ route('janji-temu') }}">
+                        @csrf
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" name="nama_lengkap" required />
+                            </div>
 
                             <div class="form-group">
                                 <label for="phone">Nomor Telepon</label>
@@ -153,65 +153,7 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>Tentang Klinik Pratama Haikhah</h3>
-                    <p>
-                        Klinik Pratama Haikhah berkomitmen memberikan layanan kesehatan
-                        yang menyeluruh dengan fokus pada kenyamanan dan kesejahteraan
-                        pasien. Kami berusaha memberikan perawatan berkualitas tinggi
-                        untuk individu dan keluarga.
-                    </p>
-                </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="{{ route('index') }}">Home</a></li>
-                        <li><a href="{{ route('layanan') }}">Layanan</a></li>
-                        <li><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
-                        <li><a href="{{ route('tenaga-kesehatan') }}">Tenaga Kesehatan</a></li>
-                        <li><a href="{{ route('tentang-kami') }}">Tentang Kami</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Partnerships</h3>
-                    <ul class="footer-partnerships">
-                        <li><img src="images/partnership-1.png" alt="" /></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Kontak Kami</h3>
-                    <div class="contact-info">
-                        <div>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>
-                                Jl. Pramuka Gg. Rengas Sejahtera No. 1, Sungai Rengas, Kec.
-                                <br />Sungai Kakap, Kabupaten Kubu Raya, Kalimantan Barat
-                                78381
-                            </p>
-                        </div>
-                        <div>
-                            <i class="fas fa-phone-alt"></i>
-                            <p>+62 812-5650-0204</p>
-                        </div>
-                        <div>
-                            <i class="fas fa-envelope"></i>
-                            <p>klinikhaikhah@gmail.com</p>
-                        </div>
-                        <div>
-                            <i class="fas fa-clock"></i>
-                            <p>Buka 24 Jam</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Klinik Pratama Haikhah. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+    @include('footer')
 
     <script src="{{ asset('js/global.js') }}"></script>
     <script src="{{ asset('js/janji-temu.js') }}"></script>

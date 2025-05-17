@@ -9,6 +9,10 @@ class AdminController extends Controller
 {
     public function index()
     {
+        if (session('admin_logged_in')) {
+            return redirect()->route('manage-janji-temu');
+        }
+
         return view('admin');
     }
 
