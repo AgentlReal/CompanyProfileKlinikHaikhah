@@ -14,7 +14,7 @@ function editAppointment(id) {
             document.getElementById("editPhone").value = data.nomor_telepon;
             document.getElementById("editEmail").value = data.email;
             document.getElementById("editDate").value = data.tanggal;
-            document.getElementById("editTime").value = data.waktu;
+            document.getElementById("editTime").value = data.waktu.slice(0, -3);
             document.getElementById("editService").value = data.layanan;
             document.getElementById("editStatus").value = data.status;
 
