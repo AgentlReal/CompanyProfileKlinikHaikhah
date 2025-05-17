@@ -4,7 +4,7 @@ document.getElementById("logoutBtn").addEventListener("click", function () {
 
 // Open Edit Modal with Appointment Data
 function editAppointment(id) {
-    fetch(`/manage-janji-temu/${id}/edit`)
+    fetch(`/admin/dashboard/${id}/edit`)
         .then((response) => response.json())
         .then((data) => {
             // Isi field modal dengan data appointment
@@ -23,7 +23,7 @@ function editAppointment(id) {
                 event.preventDefault(); // Mencegah reload halaman
 
                 // Kirimkan data melalui PUT request
-                fetch(`/manage-janji-temu/${id}`, {
+                fetch(`/admin/dashboard/${id}`, {
                     method: "PUT",
                     headers: {
                         "Content-Type": "application/json",
@@ -64,7 +64,7 @@ function deleteAppointment(id) {
     document.getElementById("deleteModal").style.display = "block";
 
     document.getElementById("confirmDelete").onclick = function () {
-        fetch(`/manage-janji-temu/${id}`, {
+        fetch(`/admin/dashboard/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",

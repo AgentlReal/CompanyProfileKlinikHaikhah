@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kontak;
+
 class TenagaKesehatanController extends Controller
 {
     public function index()
     {
-        return view('tenaga-kesehatan');
+        $kontak = Kontak::all();
+        return view('tenaga-kesehatan', compact('kontak'));
     }
 }
