@@ -48,7 +48,7 @@
                 @foreach ($pelayanan as $pelayanans)
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="{{ $pelayanans->icon }}" style="font-size: 40px; color: #2b7a78;"></i>
+                        <i class="{{ $pelayanans->gambar }}" style="font-size: 40px; color: #2b7a78;"></i>
                     </div>
                     <h3>{{ $pelayanans->nama }}</h3>
                     <p>

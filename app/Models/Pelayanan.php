@@ -7,6 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class Pelayanan extends Model
 {
     protected $table = 'pelayanan';
-    protected $fillable = ['icon', 'nama', 'deskripsi'];
-    public $timestamps = false;
+    protected $fillable = ['nama', 'deskripsi', 'gambar'];
 }
