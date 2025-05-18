@@ -43,10 +43,12 @@ class ManageJanjiTemuController extends Controller
             'layanan' => $request->service,
             'tanggal' => $request->date,
             'waktu' => $request->time,
+            'Keluhan_Gejala' => $request->symptoms,
+            'catatan_tambahan' => $request->notes,
             'status' => $request->status,
         ]);
 
-        return response()->json(['message' => 'Appointment updated successfully']);
+        return response()->json(['message' => 'Janji Temu berhasil diperbarui!']);
     }
 
     // Delete Appointment
@@ -59,6 +61,6 @@ class ManageJanjiTemuController extends Controller
         $managejanjiTemu = JanjiTemu::findOrFail($id);
         $managejanjiTemu->delete();
 
-        return response()->json(['message' => 'Appointment deleted successfully']);
+        return response()->json(['message' => 'Janji Temu berhasil dihapus']);
     }
 }
