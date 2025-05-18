@@ -67,7 +67,8 @@ function editAppointment(id) {
 function deleteAppointment(id) {
     document.getElementById("deleteModal").style.display = "block";
 
-    document.getElementById("confirmDelete").onclick = function () {
+    document.getElementById("confirmDelete").onclick = function (e) {
+        e.preventDefault();
         fetch(`/admin/dashboard/${id}`, {
             method: "DELETE",
             headers: {
@@ -81,7 +82,8 @@ function deleteAppointment(id) {
             .then((result) => {
                 alert(result.message);
                 window.location.reload();
-            });
+            })
+            .catch((err) => alert(err));
     };
 }
 
