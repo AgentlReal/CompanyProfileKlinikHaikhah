@@ -9,7 +9,7 @@ class FiturB extends Model
     protected $table = 'fitur_b';
     protected $primaryKey = 'id';
     protected $fillable = ['ruang_id', 'nama_fitur'];
-    public $timestamps = false;
+    
 
     public function ruang()
     {

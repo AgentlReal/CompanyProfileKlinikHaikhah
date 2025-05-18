@@ -8,5 +8,5 @@ class Pencapaian extends Model
 {
     protected $table = 'pencapaian';
     protected $fillable = ['tipe', 'value', 'unit','created_at'];
-    public $timestamps = false;
+   
 }

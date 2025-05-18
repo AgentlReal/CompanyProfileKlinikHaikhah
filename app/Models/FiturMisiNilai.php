@@ -9,7 +9,7 @@ class FiturMisiNilai extends Model
     protected $table = 'list_misinilai';
     protected $primaryKey = 'id';
     protected $fillable = ['id_misinilai', 'list_item'];
-    public $timestamps = false;
+   
 
     public function fiturs()
     {

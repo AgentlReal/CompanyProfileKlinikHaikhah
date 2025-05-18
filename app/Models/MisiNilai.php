@@ -9,7 +9,7 @@ class MisiNilai extends Model
     protected $table = 'misi_nilai';
     protected $primaryKey = 'id_misinilai';
     protected $fillable = ['judul'];
-    public $timestamps = false;
+
 
     public function fiturs()
     {
