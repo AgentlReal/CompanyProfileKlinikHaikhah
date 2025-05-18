@@ -16,6 +16,8 @@ function editAppointment(id) {
             document.getElementById("editDate").value = data.tanggal;
             document.getElementById("editTime").value = data.waktu.slice(0, -3);
             document.getElementById("editService").value = data.layanan;
+            document.getElementById("editSymptoms").value = data.Keluhan_Gejala;
+            document.getElementById("editNotes").value = data.catatan_tambahan;
             document.getElementById("editStatus").value = data.status;
 
             // Submit form saat user klik tombol Save Changes
@@ -38,6 +40,8 @@ function editAppointment(id) {
                         service: document.getElementById("editService").value,
                         date: document.getElementById("editDate").value,
                         time: document.getElementById("editTime").value,
+                        symptoms: document.getElementById("editSymptoms").value,
+                        notes: document.getElementById("editNotes").value,
                         status: document.getElementById("editStatus").value,
                     }),
                 })

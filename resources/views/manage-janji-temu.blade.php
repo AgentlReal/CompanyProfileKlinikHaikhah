@@ -90,19 +90,19 @@
                 @csrf
                 @method('PUT')
                 <div class="form-group">
-                    <label for="editName">Patient Name</label>
-                    <input type="text" id="editName" name="name" required />
+                    <label for="editName">Nama Pasien</label>
+                    <input type="text" id="editName" name="nama_lengkap" required />
                 </div>
                 <div class="form-group">
                     <label for="editPhone">Nomor Telepon</label>
-                    <input type="text" id="editPhone" name="phone" required />
+                    <input type="text" id="editPhone" name="nomor_telepon" required />
                 </div>
                 <div class="form-group">
                     <label for="editEmail">Email</label>
-                    <input type="email" id="editEmail" name="email" required />
+                    <input type="email" id="editEmail" name="layanan" required />
                 </div>
                 <div class="form-group">
-                    <label for="editService">Service</label>
+                    <label for="editService">Layanan</label>
                     <select id="editService" name="service" required>
                         <option value="Konsultasi Umum">Konsultasi Umum</option>
                         <option value="Konsultasi Spesialis">Konsultasi Spesialis</option>
@@ -113,11 +113,11 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="editDate">Date</label>
-                        <input type="date" id="editDate" name="date" required />
+                        <label for="editDate">Tanggal</label>
+                        <input type="date" id="editDate" name="tanggal" required />
                     </div>
                     <div class="form-group">
-                        <label for="editTime">Time</label>
+                        <label for="editTime">Waktu</label>
                         <select id="editTime" name="time" required>
                             <option value="09:00">09:00</option>
                             <option value="10:00">10:00</option>
@@ -129,7 +129,14 @@
                         </select>
                     </div>
                 </div>
-
+                <div class="form-group">
+                    <label for="editSymptoms">Keluhan/Gejala</label>
+                    <textarea id="editSymptoms" name="Keluhan_Gejala" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="editNotes">Catatan Tambahan</label>
+                    <textarea id="editNotes" name="catatan_tambahan"></textarea>
+                </div>
                 <div class="form-group">
                     <label for="editStatus">Status</label>
                     <select id="editStatus" name="status" required>

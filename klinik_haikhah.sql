@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.2
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2025 at 09:02 AM
+-- Generation Time: May 18, 2025 at 01:09 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -249,7 +249,7 @@ INSERT INTO `fitur_penerimaan` (`id`, `ruang_id`, `nama_fitur`) VALUES
 CREATE TABLE `janji_temu` (
   `id` int(10) UNSIGNED NOT NULL,
   `nama_lengkap` varchar(90) DEFAULT NULL,
-  `nomor_telepon` int(11) DEFAULT NULL,
+  `nomor_telepon` varchar(15) DEFAULT NULL,
   `email` varchar(90) DEFAULT NULL,
   `layanan` enum('Konsultasi Umum','Konsultasi Spesialis','Perawatan Gigi','Kesehatan Anak','Medical Check-up') DEFAULT NULL,
   `tanggal` date DEFAULT NULL,
@@ -264,7 +264,7 @@ CREATE TABLE `janji_temu` (
 --
 
 INSERT INTO `janji_temu` (`id`, `nama_lengkap`, `nomor_telepon`, `email`, `layanan`, `tanggal`, `waktu`, `Keluhan_Gejala`, `catatan_tambahan`, `status`) VALUES
-(9, 'Qholdi Rheody', 10, 'tes@gmail.com', 'Konsultasi Spesialis', '2025-05-17', '10:00:00', 'aaa', 'bbb', 'pending');
+(19, 'wdw', '0912312', 'wdwd@gg.com', 'Konsultasi Spesialis', '2025-05-18', '21:00:00', 'fwrgteg', 'ergergre', 'pending');
 
 -- --------------------------------------------------------
 
@@ -555,7 +555,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('UJdjNP07OANpfSK3hiPfOf5f4Tm9OBEnaO1M0ZLG', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjY6Il90b2tlbiI7czo0MDoidFlwT2hVb2hQSEQ3NDlTczRYYnZCZWZPTXRUV0dQOW5sT1pSaDRFWiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fX0=', 1747465294);
+('eSyLLuiAOxFI8xc3Zb9xCOaQPOfpei4gZB8wSlvw', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiV0pid282NlBSVXhTMWg1dEk4SFZZcjZVczduRnYzV0ppRndQMmhUbCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9qYW5qaS10ZW11Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1747566414),
+('pkLTYowJWzYQKPy5iFX1mLLxCorSFKMXcz1TVWxK', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjY6Il90b2tlbiI7czo0MDoiRUZNdHREdWJ4RzNlN3B6YXpqeFlPR1A2NGttNktDY1RSZ09SWG9TdSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDU6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9kYXNoYm9hcmQvMTkvZWRpdCI7fXM6MTU6ImFkbWluX2xvZ2dlZF9pbiI7YjoxO3M6NzoidXNlcl9pZCI7Tjt9', 1747566507);
 
 -- --------------------------------------------------------
 
@@ -780,7 +781,7 @@ ALTER TABLE `fitur_penerimaan`
 -- AUTO_INCREMENT for table `janji_temu`
 --
 ALTER TABLE `janji_temu`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `jobs`
