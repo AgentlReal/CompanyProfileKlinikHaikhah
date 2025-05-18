@@ -103,6 +103,9 @@ appointmentForm.addEventListener("submit", function (e) {
         body: formData,
     })
         .then((res) => res.json())
-        .then((res) => alert(res.message))
+        .then((res) => {
+            alert(res.message);
+            window.location.reload();
+        })
         .catch((err) => alert(err));
 });
