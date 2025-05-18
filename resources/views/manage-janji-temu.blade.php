@@ -165,6 +165,7 @@
                 <p>Are you sure you want to delete this appointment?</p>
                 <p>This action cannot be undone.</p>
             </div>
+            @foreach ($managejanjitemu as $jt)
             <div class="modal-footer">
                 @foreach ($managejanjitemu as $jt)
                 <form action="{{ route('manage-janji-temu.destroy', $jt->id) }}" method="POST">
@@ -175,6 +176,7 @@
                 <button class="btn-cancel">Cancel</button>
                 @endforeach
             </div>
+            @endforeach
         </div>
     </div>
     <script src="{{ asset('js/manage-janji-temu.js') }}"></script>
